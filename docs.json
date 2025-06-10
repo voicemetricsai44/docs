@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "Voicemetrics",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#034737",
     "light": "#034737",
     "dark": "#034737"
   },
@@ -14,7 +14,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
               "index",
               "quickstart",
@@ -76,7 +76,7 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
+    "light": "/logo/Voice_metrics_logo.png",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
