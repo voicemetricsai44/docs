@@ -25,7 +25,7 @@
               "overview",
               "whitelabelling",
               {
-                "group": "customdomain",
+                "group": "Custom Domain",
                 "pages": ["customdomain"]
               }
              ]
