@@ -31,6 +31,7 @@
               },
               {
                 "group": "White Labelling",
+                "icon": "paint",
                 "pages": ["customdomain"]
               }
              ]
