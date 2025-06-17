@@ -24,9 +24,9 @@
             "pages": [
               "overview",
               "whitelabelling"
-            ]
-          },
-          {
+             ]
+            },
+        {
             "group": "Essentials",
             "pages": [
               "essentials/markdown",
