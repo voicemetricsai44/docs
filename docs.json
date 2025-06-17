@@ -23,7 +23,11 @@
             "group": "Getting Started",
             "pages": [
               "overview",
-              "whitelabelling"
+              "whitelabelling",
+              {
+                "group": "customdomain",
+                "pages": ["customdomain"]
+              }
              ]
             },
         {
