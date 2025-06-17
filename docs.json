@@ -24,10 +24,7 @@
             "group": "Getting Started",
             "pages": [
               "overview",
-              "whitelabelling",
-              {
-              "pages": ["customdomain"]
-            }        
+              "whitelabelling"
             ]
           },
           {
