@@ -81,8 +81,8 @@
     }
   },
   "logo": {
-    "light": "/logo/Voice_metrics_logo.png",
-    "dark": "/logo/Voice_metrics_logo.png"
+    "light": "/logo/Vm_logo.png",
+    "dark": "/logo/Vm_logo.png"
   },
   "navbar": {
     "links": [
