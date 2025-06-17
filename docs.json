@@ -15,7 +15,7 @@
         "groups": [
           {
             "group": "Introduction",
-            "icon": "book #034737",
+            "icon": "book #034737 20px",
             "pages": [
               "index"              
             ]
@@ -26,7 +26,7 @@
             "pages": [        
               {
                 "group": "Overview",
-                "icon": "open-book",
+                "icon": "openbook #0000ff",
                 "pages": ["voicemetricsoverview"]
               },
               {
