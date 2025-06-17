@@ -24,11 +24,11 @@
             "pages": [        
               {
                 "group": "Overview",
-                "pages": ["Voicemetrics Overview"]
+                "pages": ["voicemetricsoverview"]
               },
               {
                 "group": "White Labelling",
-                "pages": ["Custom Domain"]
+                "pages": ["customdomain"]
               }
              ]
             },
