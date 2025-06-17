@@ -14,13 +14,18 @@
         "tab": "Guides",
         "groups": [
           {
+            "group": "Introduction",
+            "pages": [
+              "index"              
+            ]
+          },
+          
+          {
             "group": "Getting Started",
             "pages": [
-              "index",
-              "gettingstarted",
               "overview",
-              "quickstart",
-              "development"
+              "whitelabelling",
+              "re-billing"
             ]
           },
           {
@@ -90,7 +95,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label":"Dashboard",
       "href": "https://apps.voicemetrics.ai/#/login"
     }
   },
