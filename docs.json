@@ -65,11 +65,6 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Community",
           "href": "https://mintlify.com/community",
           "icon": "slack"
@@ -84,7 +79,7 @@
   },
   "logo": {
     "light": "/logo/Voice_metrics_logo.png",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/Voice_metrics_logo.png"
   },
   "navbar": {
     "links": [
