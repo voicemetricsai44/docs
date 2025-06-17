@@ -21,8 +21,11 @@
           },
           {
             "group": "Getting Started",
-            "pages": [
-              "overview",
+            "pages": [        
+              {
+                "group": "Overview",
+                "pages": ["Voicemetrics Overview"]
+              },
               {
                 "group": "White Labelling",
                 "pages": ["Custom Domain"]
