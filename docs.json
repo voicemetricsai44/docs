@@ -15,23 +15,20 @@
         "groups": [
           {
             "group": "Introduction",
-            "icon": "book #034737 20px",
+            "icon": "book",
             "pages": [
               "index"              
             ]
           },
           {
             "group": "Getting Started",
-            "icon": "rocket",
             "pages": [        
               {
                 "group": "Overview",
-                "icon": "openbook #0000ff",
                 "pages": ["voicemetricsoverview"]
               },
               {
                 "group": "White Labelling",
-                "icon": "paint",
                 "pages": ["customdomain"]
               }
              ]
