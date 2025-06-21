@@ -28,7 +28,7 @@
            {
             "group": "White Labelling",
             "pages": [        
-              "Brand Information",
+              "brandinformation",
               "Custom Domain",
               "Email SMTP",
               "Email Template"
