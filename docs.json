@@ -28,10 +28,10 @@
            {
             "group": "White Labelling",
             "pages": [        
-              "brabd information",
-              "custom domain",
-              "Email SMTP",
-              "Email Template"
+              "brandinformation",
+              "customdomain",
+              "emailsmtp",
+              "emailtemplate"
             ]
           },
         {
