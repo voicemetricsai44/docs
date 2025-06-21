@@ -37,14 +37,14 @@
           {
             "group": "Re-billing",
             "pages": [
-              "rebilling/stripeint",
-              "rebilling/createsaas",
-              "rebilling/assignsaas",
-              "rebilling/clientsub"
+              "Rebilling/stripeint",
+              "Rebilling/createsaas",
+              "Rebilling/assignsaas",
+              "Rebilling/clientsub"
             ]
           },
         {
-            "group": "Essentials",
+            "group": "Samples",
             "pages": [
               "essentials/markdown",
               "essentials/code",
