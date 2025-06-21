@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Voicemetrics",
   "colors": {
-    "primary": "#034737",
-    "light": "#034737",
-    "dark": "#034737"
+    "primary": "#000000",
+    "light": "#000000",
+    "dark": "#ffffff"
   },
   "favicon": "logo/fav.png",
   "navigation": {
