@@ -15,7 +15,6 @@
         "groups": [
           {
             "group": "Introduction",
-            "icon": "book",
             "pages": [
               "index"              
             ]
@@ -23,16 +22,9 @@
           {
             "group": "Getting Started",
             "pages": [        
-              {
-                "group": "Overview",
-                "pages": ["voicemetricsoverview"]
-              },
-              {
-                "group": "White Labelling",
-                "pages": ["customdomain"]
-              }
-             ]
-            },
+              "overview"
+            ]
+          },
         {
             "group": "Essentials",
             "pages": [
