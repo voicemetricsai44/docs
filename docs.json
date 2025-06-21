@@ -25,6 +25,15 @@
               "overview"
             ]
           },
+           {
+            "group": "White Labelling",
+            "pages": [        
+              "brabd information",
+              "custom domain",
+              "Email SMTP",
+              "Email Template"
+            ]
+          },
         {
             "group": "Essentials",
             "pages": [
