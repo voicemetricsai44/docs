@@ -1,5 +1,66 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Email Templates "
 ---
 
+## **Email Templates for Client Notifications**
+
+**Email templates** help you deliver branded, consistent communication to your clients across key platform events. You can fully customize system-generated emails to reflect your agency’s tone, style, and professionalism.
+
+## **Available Templates**
+
+Customize the following notification emails:
+
+<AccordionGroup>
+  <Accordion title="Payment Failure Notification">
+    Notifies clients when a payment attempt fails, prompting them to update payment details.
+  </Accordion>
+  <Accordion title="Password Reset Notification">
+    Sent when a client requests a password reset, including a secure link to reset their credentials.
+  </Accordion>
+  <Accordion title="Subscription Payment Confirmation">
+    Confirms successful payment for the client’s subscription plan, including plan and invoice details.
+  </Accordion>
+  <Accordion title="Subscription Cancellation Notification">
+    Informs clients that their subscription has been canceled, with optional instructions to resubscribe.
+  </Accordion>
+  <Accordion title="Subscription Plan Change Notification">
+    Confirms when a client switches plans, showing new plan details and billing changes.
+  </Accordion>
+</AccordionGroup>
+
+## **Steps to Customize Your Email Templates**
+
+<Steps>
+  <Step title="Navigate to Email Templates" stepNumber={1} titleSize="p">
+    Go to **White Label** \> **Email Templates.**
+  </Step>
+  <Step title="Select & Edit Template" stepNumber={2} titleSize="p">
+    Click **Edit** on any template you wish to modify.
+  </Step>
+  <Step title="Customize Content" stepNumber={3} titleSize="p">
+    - Update the **Subject Line** to reflect your tone.
+    - Edit the **Email Body** to include your brand’s language.
+    - Use **HTML formatting** or styling options to align with your design.
+  </Step>
+  <Step title="Personalize with Variables" stepNumber={4} titleSize="p">
+    Type **$** variables (e.g., \$client_name, \$subscription_plan) to insert client-specific details dynamically.
+  </Step>
+  <Step title="Send a Test Email" stepNumber={5} titleSize="p">
+    Click **Send Test Email** and select **Send Now**.
+
+    - Check your inbox to verify the layout and content.
+    - Didn't receive it? Try the **RESEND** button and check your spam folder.
+  </Step>
+  <Step title="Save & Publish" stepNumber={6} titleSize="p">
+    Once you're satisfied, click **Save & Publish** to apply the changes.
+  </Step>
+</Steps>
+
+**Notes:**
+
+<Note>
+  - **Personalization:** Use \$ tokens to automatically insert values like client name, plan, payment amount, etc.
+  - **Brand Voice:** Keep language consistent with your agency’s tone — professional, helpful, and clear.
+  - **Responsiveness:** Templates are mobile-optimized, but test them on multiple devices for best results.
+  - **Fallback:** If a variable isn't available (e.g., missing plan name), the platform will use a default or leave it blank.
+</Note>
