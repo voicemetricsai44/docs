@@ -1,4 +1,99 @@
 ---
 title: "Client Subscription"
-
 ---
+
+## **Client Subscription Overview**
+
+This guide explains how clients subscribe to a plan and continue using the platform after their trial ends. It covers trial access, plan details, billing flow, minute usage, and how agencies profit.
+
+## **Free Trial Access**
+
+New clients start with a **free trial**, configured by the agency.
+
+- Clients can explore the platform **without payment** or subscription.
+- After the trial, clients must subscribe to a plan to keep using the platform.
+
+<CardGroup cols={2}>
+  <Card title="Trial Duration" icon="calendar-days" color="#034737" horizontal>
+    The default is 7 days (can be customized).
+  </Card>
+  <Card title="Free Minutes" icon="alarm-clock" color="#034737" horizontal>
+    - The trial includes call minutes.
+  </Card>
+</CardGroup>
+
+## **Subscribing to a Plan**
+
+Once the trial ends, the client is prompted to choose a subscription plan
+
+- Choose between **monthly** or **yearly** options.
+- Each plan includes:
+  - **Plan Charges**
+  - **Free Call Minutes**
+  - **Post-Free Minute Rate** (charged per additional minute)
+- Clients can also choose how to refill their wallet for additional usage.
+
+## **Example Plans:**
+
+<CardGroup cols={2}>
+  <Card title="Starter Plan" icon="hourglass-start" color="#034737">
+    - \$299/month
+    - Includes 300 free minutes
+    - Additional minutes charged at \$0.48/min
+  </Card>
+  <Card title="Pro Plan" icon="rectangle-pro" color="#034737">
+    - \$699/month
+    - Includes 1,000 free minutes
+    - Additional minutes charged at \$0.28/min
+  </Card>
+</CardGroup>
+
+<Tip>
+  **Keep 100% of the Profits**
+
+  All client subscription and add-on payments are made directly to your connected **Stripe account**.
+</Tip>
+
+## **Refill Add-On Minutes (Auto Refill)**
+
+<Accordion title="Manual Refill" iconType="regular">
+  When free minutes run out, clients can continue usage through **add-on minutes**.
+
+  - Clients **select a refill amount** (e.g., 100 / 500 / 1,000 minutes).
+  - The refill is stored in a wallet and used automatically once free minutes are exhausted.
+</Accordion>
+
+<Accordion title="Auto Refill" iconType="regular">
+  When the wallet balance drops below **10%** of the last refill amount, the system **auto-refills**.
+
+  - Ensures **uninterrupted service** with no manual top-ups.
+  - The auto-refill amount is billed directly from the **client’s saved card.**
+</Accordion>
+
+<Accordion title="Minute Usage Flow" iconType="regular">
+  1. The platform first uses the **free minutes** from the active subscription plan.
+  2. **After free minutes:**
+     - Minutes are consumed from the **Add-On Wallet**.
+     - If the wallet is low, **auto-refill** activates based on settings.
+  3. Clients can monitor everything inside their **Billing Dashboard**.
+</Accordion>
+
+## **Summary**
+
+<Steps>
+  <Step title="Clients begin with a free trial — limited time and minutes." stepNumber={1} titleSize="p">
+    Agency can provide free days and free minutes for a limited time duration
+  </Step>
+  <Step title="After the trial, they must subscribe to a plan." titleSize="p">
+    **Plans offer:**
+
+    - Free monthly minutes
+    - Per-minute rates after usage
+    - Auto-refill to avoid downtime
+  </Step>
+  <Step title="Refill Minutes" stepNumber={3} titleSize="p">
+    - **Add-on wallets** are billed automatically to keep campaigns running.
+    - Agencies retain **100% of all payments**, directly via **Stripe**.
+    - Transparent billing and simple controls for both agency and client.
+  </Step>
+</Steps>
