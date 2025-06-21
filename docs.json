@@ -28,10 +28,7 @@
            {
             "group": "White Labelling",
             "pages": [        
-              "brand information",
-              "custom domain",
-              "email smtp",
-              "email template"
+              "brandinformation"
             ]
           },
         {
