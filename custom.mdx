@@ -1,0 +1,86 @@
+---
+title: "Custom Domain Setup"
+description: "A custom domain allows you to deliver a fully branded experience to your clients by hosting the platform under your agency’s domain (e.g., app.youragency.com). This enhances professionalism, builds trust, and keeps your brand front and center."
+---
+
+## **Why Use a Custom Domain?**
+
+- Reinforce your agency’s identity by replacing generic URLs.
+- Offer a seamless and consistent brand experience.
+- Improve client trust with a domain they recognize as yours.
+
+<Accordion title="Before setting up your custom domain" iconType="regular">
+  - Access to your domain's DNS settings (via your domain registrar or hosting provider).
+  - A selected subdomain (e.g., [app.yourdomain.com](http://app.yourdomain.com)) for your platform.
+</Accordion>
+
+## **Setup Instructions**
+
+<Steps>
+  <Step title="Choose Your Custom Domain" stepNumber={1} titleSize="p">
+    Select a subdomain like [app.yourdomain.com](http://app.yourdomain.com) to host your white-labeled platform.
+
+    <Tip>
+      **Tip:** Use a subdomain to keep your platform organized and separate from your main website (e.g., [yourdomain.com](http://yourdomain.com)).
+    </Tip>
+  </Step>
+  <Step title="Add Your Domain in the Agency Panel" stepNumber={2} titleSize="p">
+    - Log in to your **Agency Panel**.
+    - Navigate to the **Custom Domain** section.
+    - Enter your subdomain (e.g., [ai.yourdomain.com](http://ai.yourdomain.com)) and click **Check Status**.
+  </Step>
+  <Step title="Update DNS Records" stepNumber={3} titleSize="p">
+    - Log in to your domain registrar (e.g., GoDaddy, Namecheap, Bluehost, etc.).
+    - Navigate to the **DNS Settings** or **DNS Management** section.
+    - Add a **CNAME Record** with the following details:
+      - **Type**: CNAME
+      - **Host**: app (or your preferred subdomain prefix)
+      - **Value / Points to**: [cname.voicemetrics.ai](http://cname.voicemetrics.ai)
+    - Save the DNS record.
+    - Allow some time for DNS changes to propagate (typically a few minutes to 24 hours).
+
+    <Warning>
+      Make sure the CNAME points to the exact value provided in your Agency Panel.
+    </Warning>
+  </Step>
+  <Step title="Verify the Domain" stepNumber={4} titleSize="p">
+    After updating DNS:
+
+    - Return to the **Custom Domain** panel.
+    - Click **Check Status** to trigger verification.
+    - DNS propagation may take from a few minutes up to 24 hours.
+  </Step>
+  <Step title="Go Live with Your Custom Domain" stepNumber={5} titleSize="p">
+    Once verified:
+
+    - The platform becomes accessible via your custom domain.
+    - **Open the custom URL in your browser **to confirm it loads correctly.
+    - **Log in to ensure full functionality** under your white-labeled domain.
+  </Step>
+</Steps>
+
+**Additional Notes**
+
+<Check>
+  **SSL Certificate**: The system auto-generates an SSL certificate; if not, install it manually.
+</Check>
+
+<Check>
+  **DNS Propagation**: It may take up to 24 hours globally for changes to take effect.
+</Check>
+
+## **Frequently Asked Questions**
+
+<AccordionGroup>
+  <Accordion title="1. Do I have to use app.mydomain.com?">
+    **Not at all. **You can use any subdomain, but app. is a common and professional choice. Subdomains allow flexibility while maintaining a clean separation from your main website.
+  </Accordion>
+  <Accordion title="2. What’s the best practice for domain usage?">
+    Here’s a recommended setup:
+
+    - **Main Website**: [yourdomain.com](http://yourdomain.com) – for marketing, lead capture, etc.
+    - **White-Label Platform**: [app.yourdomain.com](http://app.yourdomain.com) – for your branded client access
+
+    This structure keeps things organized and easy to manage for both your agency and clients.
+  </Accordion>
+</AccordionGroup>
