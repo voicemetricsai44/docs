@@ -37,10 +37,10 @@
           {
             "group": "Re-billing",
             "pages": [
-              "rebilling/stripeint",
-              "rebilling/createsaas",
-              "rebilling/assignsaas",
-              "rebilling/clientsub"
+              "re-billing/stripeint",
+              "re-billing/createsaas",
+              "re-billing/assignsaas",
+              "re-billing/clientsub"
             ]
           },
         {
