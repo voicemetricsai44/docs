@@ -4,7 +4,7 @@
   "name": "Voicemetrics",
   "colors": {
     "primary": "#000000",
-    "light": "#ffffff",
+    "light": "#ff0000",
     "dark": "#000000"
   },
   "favicon": "logo/fav.png",
