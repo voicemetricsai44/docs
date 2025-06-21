@@ -29,7 +29,8 @@
             "group": "White Labelling",
             "pages": [        
               "brand",
-              "custom"
+              "custom",
+              "emailsmtp"
             ]
           },
         {
