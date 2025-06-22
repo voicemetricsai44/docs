@@ -102,11 +102,6 @@
         {
           "anchor": "Community",          "href":"https://discord.com/channels/1357685642347286651/1357685643500847280",
           "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
