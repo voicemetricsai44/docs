@@ -44,7 +44,7 @@
             ]
           },
           {
-            "group": "clientaccount",
+            "group": "Client Account",
             "pages": [
               "clientaccount/createclient",
               "clientaccount/manageclient"
