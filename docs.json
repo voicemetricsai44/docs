@@ -44,6 +44,13 @@
             ]
           },
           {
+            "group": "clientaccount",
+            "pages": [
+              "clientaccount/createclient",
+              "clientaccount/manageclient"
+            ]
+          },
+          {
             "group": "Core Concepts",
             "pages": [
               "core/createagent"
