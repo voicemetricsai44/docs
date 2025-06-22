@@ -47,7 +47,9 @@
             "group": "Client Account",
             "pages": [
               "clientaccount/createclient",
-              "clientaccount/manageclient"
+              "clientaccount/manageclient",
+              "clientaccount/overview",
+              "clientaccount/createagent"
             ]
           },
           {
