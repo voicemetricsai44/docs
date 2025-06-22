@@ -43,6 +43,12 @@
               "Rebilling/clientsub"
             ]
           },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "core/createagent"
+            ]
+          },
         {
             "group": "Samples",
             "pages": [
