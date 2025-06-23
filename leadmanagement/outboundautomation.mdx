@@ -7,3 +7,81 @@ title: "Outbound Automation "
 **Outbound Call Automation** is similar to building an ActiveCampaign-style workflow — but for voice calls. It allows you to trigger AI-powered calls based on real-time events, such as new lead creation, lead updates, or other webhook-based triggers from CRMs or apps.
 
 This lets you automate follow-ups and outreach instantly without scheduling a campaign manually.
+
+## **How It Works**
+
+<Steps>
+  <Step title="Name Your Automation" stepNumber={1} titleSize="p">
+    Give your automation a descriptive name for easy identification (e.g., “New Facebook Lead Follow-Up”).
+  </Step>
+  <Step title="Choose a Trigger" stepNumber={2} titleSize="p">
+     Select what event will start the call automation:
+
+    - When a **Lead is Created**
+    - When a **Lead is Updated**
+    - When a **Lead is Created or Updated**
+  </Step>
+  <Step title="Apply Conditions (Optional)" stepNumber={3} titleSize="p">
+    - Run automation only if:
+      - The lead belongs to a **specific list**
+      - A **specific tag** is applied
+    - This helps target only qualified leads or specific campaigns
+  </Step>
+  <Step title="Assign an Agent & Phone Number" stepNumber={4} titleSize="p">
+    - Choose the AI agent that will handle the call
+    - Assign the outbound phone number (must be imported from **Vapi** or **Retell AI**)
+  </Step>
+  <Step title="Set Call Schedule" stepNumber={5} titleSize="p">
+    Define business hours to avoid calling outside working hours (e.g., 10 AM – 6 PM)
+  </Step>
+  <Step title="Define Call Concurrency" stepNumber={6} titleSize="p">
+    - Choose how many calls to run in parallel
+    - Example: Set concurrency to 20 to dial 20 leads at once
+  </Step>
+  <Step title="Configure Redial Logic" stepNumber={7} titleSize="p">
+    1. If a call fails or goes unanswered:
+       - Retry after 15 minutes (1st attempt)
+       - Retry after 4 hours (2nd attempt)
+       - Retry next day (3rd attempt)
+  </Step>
+  <Step title="Post-Call Actions" stepNumber={8} titleSize="p">
+    - AI validates the conversation
+    - Uses #Extract_Info to capture lead data (name, email, intent, etc.)
+    - Uses #Book_Calendar to schedule appointments
+    - Sends call data to CRM or Google Sheets via #Post_Call_Event webhook
+    - View full call logs and transcripts in **Call History**
+  </Step>
+</Steps>
+
+## **Use Case Examples**
+
+- **Instant Lead Follow-Up**\
+   Trigger a call when a lead fills out a form or subscribes via a landing page.
+- **CRM Lead Re-Engagement**\
+   Call warm or reactivated leads as soon as their status changes.
+- **Tag-Based Triggering**\
+   Auto-call when a lead gets tagged as “Hot,” “Schedule Call,” or “Demo Booked.”
+- **Appointment Reminder Calls**\
+   Trigger calls 1 hour before a scheduled appointment to reduce no-shows.
+- **Missed Payment or Renewal Alert**\
+   Automatically notify users when their subscription is about to expire.
+
+## **Integrations**
+
+Use this with:
+
+- **CRMs** like HubSpot, Zoho, and GoHighLevel
+- **Forms & Lead Sources** like Facebook Ads, Google Ads, Typeform
+- **Automation Tools** like Zapier, [Make.com](http://Make.com), N8N
+- **Spreadsheets** like Google Sheets or Excel
+
+<Note>
+  Trigger via **Webhook** for full automation flow.
+</Note>
+
+**Important:**
+
+- Outbound numbers must be imported from **Vapi** or **Retell AI**
+- Ensure agents are configured with the appropriate prompt and actions
+- Respect DND guidelines and legal calling hours in your region
+- Combine with **Call Analytics** to track conversion rates

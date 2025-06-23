@@ -5,3 +5,76 @@ title: "Outbound Campaigns"
 ## **Overview**
 
 An **Outbound Call Campaign** works like a bulk email campaign — but with real-time voice conversations powered by AI. Use it to engage, qualify, and convert large volumes of leads at scale, automatically.
+
+## **How It Works**
+
+<Steps>
+  <Step title="Create a Lead List" stepNumber={1} titleSize="p">
+    - Import leads or sync from your CRM
+    - Organize leads into **Lists** or apply **Tags**
+  </Step>
+  <Step title="Launch a New Campaign" stepNumber={2} titleSize="p">
+    - Go to **Campaigns** and click **Create Campaign**
+    - Set:
+      - **Campaign Name**
+      - **Lead List / Tag**
+      - **Assigned AI Agent**
+      - **Outbound Phone Number** 
+      - **Launch Date & Time**
+  </Step>
+  <Step title="Configure Call Settings" stepNumber={3} titleSize="p">
+    - **Call Concurrency** (e.g., 20 calls in parallel)
+    - **Auto Redial Rules** for unanswered calls (e.g., retry after 15 mins, 4 hrs, next day)
+  </Step>
+  <Step title="AI Handles the Conversations" stepNumber={4} titleSize="p">
+    Your AI agent will call each lead, ask predefined questions, qualify them, and take action
+  </Step>
+  <Step title="Post-Call Actions" stepNumber={5} titleSize="p">
+    - Extract key lead info using #Extract_Info
+    - Book appointments with #Book_Calendar
+    - Push lead data to CRM or Sheets using #Post_Call_Event
+    - Full call log, summary, and transcript saved under **Call History**
+  </Step>
+</Steps>
+
+## **Features**
+
+- Target specific lead lists or tags
+- Use custom agents with tailored prompts
+- Assign dedicated outbound numbers
+- Schedule campaigns in advance
+- Auto redial settings to maximize answer rates
+- Track performance via call analytics and conversion reports
+
+## **Popular Use Cases**
+
+1. **Cold Outreach**
+   - Call purchased or collected cold leads to introduce your product/service and qualify interest.
+2. **Lead Reactivation**
+   - Engage cold or inactive leads from your client’s CRM with reactivation scripts.
+3. **New Lead Follow-Up**
+   - Automatically call new leads within minutes of form submissions or ad conversions.
+4. **Webinar / Event Reminders**
+   - Send voice reminders before webinars, demos, or workshops and allow users to confirm or reschedule via the call.
+5. **Missed Appointment Follow-Ups**
+   - Call no-shows to offer rescheduling and gather feedback for future engagement.
+6. **Limited-Time Offer Campaigns**
+   - Promote short-term discounts or seasonal offers and drive quick conversions.
+7. **Service Renewal / Upgrade Calls**
+   - Call existing customers about subscription renewals or upsell opportunities.
+8. **Feedback Collection**
+   - Collect NPS or service feedback after a purchase or a completed service.
+
+**Important**
+
+<Note>
+  Phone numbers must be imported from **Vapi** or **Retell AI**
+</Note>
+
+<Note>
+  Use compliant call timings and respect DND regulations
+</Note>
+
+<Note>
+  Combine with webhook integrations for deeper CRM sync and workflow automation
+</Note>
