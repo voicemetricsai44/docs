@@ -71,7 +71,20 @@
           {
             "group": "Core Concepts",
             "pages": [
-              "core/createagent"
+              "core/createagent",
+              "core/importagents",
+              "core/importknowledgebase",
+              "core/importphone",
+              "core/promptmanagement",
+              "core/functioncalling",
+              "core/calendarbooking",
+              "core/extractcallinfo",
+              "core/sendpostcall",
+              "core/customactions",
+              "core/inboundphonecalls",
+              "core/inboundwebcalls",
+              "leadmanagement/outboundcampaign",
+              "leadmanagement/outboundautomation"
             ]
           }        
         ]
