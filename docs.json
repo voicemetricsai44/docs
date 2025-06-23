@@ -63,7 +63,9 @@
               "leadmanagement/filterlead",
               "leadmanagement/list",
               "leadmanagement/tag",
-              "leadmanagement/customfield"
+              "leadmanagement/customfield",
+              "leadmanagement/importlead",
+              "leadmanagement/exportlead"
             ]
           },
           {
