@@ -52,25 +52,18 @@
               "clientaccount/createagent",
               "clientaccount/knowledgebase",
               "clientaccount/phonenumbers",
-              "clientaccount/webwidget"
-            ]
-          },
-          {
-            "group": "Lead Management",
-            "pages": [
+              "clientaccount/webwidget",
               "leadmanagement/addlead",
-               "leadmanagement/list",
+              "leadmanagement/list",
               "leadmanagement/tag",
-              "leadmanagement/updatelead",
-              "leadmanagement/filterlead",
               "leadmanagement/importlead",
               "leadmanagement/exportlead",
               "leadmanagement/customfield",
               "leadmanagement/webhookleads",
               "leadmanagement/outboundcampaign",
-              "leadmanagement/outboundautomation"           
+              "leadmanagement/outboundautomation"
             ]
-          },
+          },          
           {
             "group": "Core Concepts",
             "pages": [
