@@ -56,6 +56,12 @@
             ]
           },
           {
+            "group": "Lead Management",
+            "pages": [
+              "leadmanagement/addlead"
+            ]
+          },
+          {
             "group": "Core Concepts",
             "pages": [
               "core/createagent"
