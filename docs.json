@@ -58,7 +58,9 @@
           {
             "group": "Lead Management",
             "pages": [
-              "leadmanagement/addlead"
+              "leadmanagement/addlead",
+              "leadmanagement/updatelead",
+              "leadmanagement/filterlead"
             ]
           },
           {
