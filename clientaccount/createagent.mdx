@@ -28,92 +28,62 @@ description: "Easily create a custom AI agent that can handle conversations, qua
 
 ### **Settings**
 
-<CardGroup cols={2}>
-  <Card title="Speech Settings" icon="volume-high" color="#034737">
-    Control AI agent interactions. Adjust responsiveness, tone, and naturalness for better calls.
-  </Card>
-  <Card title="Transcription Settings" icon="pencil-mechanical" color="#034737">
-    Control voice-to-text conversion. Adjust transcription quality, formatting, and keyword handling for accurate call data.
-  </Card>
-  <Card title="Call Settings" icon="phone-volume" color="#034737">
-    - Configure call behavior, including duration, silence detection, voicemail handling, and more. These settings help tailor the overall call flow.
-  </Card>
-  <Card title="Agency Settings" icon="house-building" color="#034737">
-    Set the LLM model and temperature to adjust AI creativity and consistency.\
-    Visible only with "Agency View" enabled in the footer.
-  </Card>
-</CardGroup>
+- **Speech Settings**
+  - Control how the AI agent speaks and interacts during calls. Adjust the responsiveness, tone, and naturalness of the conversation for a better caller experience.
+- **Transcription Settings**
+  - Manage how voice input is converted into text. Customize transcription quality, formatting, and keyword handling for more accurate call data.
+- **Call Settings**
+  - Configure call behavior, including duration, silence detection, voicemail handling, and more. These settings help tailor the overall call flow.
+- **Agency Settings**
+  - Set the LLM model and temperature to control the AI’s creativity and consistency during conversations.
+
+    <Note>
+      This section is visible only if "Agency View" is enabled in the client account menu footer.
+    </Note>
 
 ### **Prompt**
 
-<AccordionGroup>
-  <Accordion title="Design how your AI speaks and behaves">
-    - First Message\
-      The greeting or intro message is played when a call connects
-    - Task Prompt\
-      Core instruction to guide the AI on what to say or do.
-  </Accordion>
-  <Accordion title="Using Variables">
-    - Use dynamic fields in the prompt using \$
-    - Example: Hi \$Lead_Name, I see you're interested in \$Service_Type.
-  </Accordion>
-  <Accordion title="Using Tools (Actions)">
-    - Trigger actions with simple commands in the prompt
-    - Example: Use tool #Book_Calendar to schedule an appointment.
-  </Accordion>
-</AccordionGroup>
+**Design how your AI speaks and behaves:**
+
+- First Message: The greeting or intro message is played when a call connects
+- Task Prompt: Core instruction to guide the AI on what to say or do
+
+**Using Variables**
+
+- Use dynamic fields in the prompt using \$
+- Example: Hi \$Lead_Name, I see you're interested in \$Service_Type.
+
+**Using Tools (Actions)**
+
+- Trigger actions with simple commands in the prompt.
+- Example: Use tool #Book_Calendar to schedule an appointment.
 
 ### **Actions**
 
 **On-Call Actions**
 
-<AccordionGroup>
-  <Accordion title="Transfer Call">
-    - Redirect to another number or a human
-  </Accordion>
-  <Accordion title="End Call">
-    - Terminate the conversation with a polite message
-  </Accordion>
-  <Accordion title="Book Calendar">
-    - Check availability and schedule appointments
-  </Accordion>
-  <Accordion title="Custom Action">
-    - Fetch or send data via APIs (Make, N8N, Zapier)
-  </Accordion>
-</AccordionGroup>
+- **Transfer Call** – Redirect to another number or a human
+- **End Call** – Terminate conversation with a polite message
+- **Book Calendar** – Check availability and schedule appointments
+- **Custom Action** – Fetch or send data via APIs (Make, N8N, Zapier)
 
 **Post-Call Actions**
 
-<AccordionGroup>
-  <Accordion title="Send Email">
-    - Send the conversation summary to the inbox
-  </Accordion>
-  <Accordion title="Send SMS">
-    - Notify the client or lead via text
-  </Accordion>
-  <Accordion title="Extract Info">
-    - Capture lead details (e.g., name, phone, intent)
-  </Accordion>
-  <Accordion title="Send to Server (Webhook)">
-    - Push call data to Deploy the AgentCRMs, Sheets, or other tools
-  </Accordion>
-</AccordionGroup>
+- **Send Email** – Send conversation summary to inbox
+- **Send SMS** – Notify client or lead via text
+- **Extract Info** – Capture lead details (e.g., name, phone, intent)
+- **Send to Server (Webhook)** – Push call data to CRMs, Sheets, or other tools
 
 ### **Deploy the Agent**
 
 Once the agent is configured, connect it to inbound/outbound channels:
 
-<AccordionGroup>
-  <Accordion title="Assign Outbound Phone Numbers">
-    - Used to place outbound calls
-    - Go to Deploy Tab → Outbound Numbers → Select a number
-  </Accordion>
-  <Accordion title="Assign Inbound Phone Numbers">
-    - Used to handle incoming calls
-    - Go to Deploy Tab → Inbound Numbers → Select a number
-  </Accordion>
-  <Accordion title="Assign Web Widgets">
-    - Used for web-based voice conversations (e.g., website live chat)
-    - Go to Deploy Tab → Web Widgets → Connect widget
-  </Accordion>
-</AccordionGroup>
+- **Assign Outbound Phone Numbers**
+  - Used to place outbound calls
+  - Go to Deploy Tab → Outbound Numbers → Select a number
+- **Assign Inbound Phone Numbers**
+  - Used to handle incoming calls
+  - Go to Deploy Tab → Inbound Numbers → Select a number
+- **Assign Web Widgets**
+  - Used for web-based voice conversations (e.g., website live chat)
+  - Go to Deploy Tab → Web Widgets → Connect widget
