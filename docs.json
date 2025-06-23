@@ -60,7 +60,10 @@
             "pages": [
               "leadmanagement/addlead",
               "leadmanagement/updatelead",
-              "leadmanagement/filterlead"
+              "leadmanagement/filterlead",
+              "leadmanagement/list",
+              "leadmanagement/tag",
+              "leadmanagement/customfield"
             ]
           },
           {
