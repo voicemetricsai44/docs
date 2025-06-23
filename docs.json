@@ -52,7 +52,7 @@
               "clientaccount/createagent",
               "clientaccount/knowledgebase",
               "clientaccount/phonenumbers",
-              "clientaccount/webwidgets"
+              "clientaccount/webwidget"
             ]
           },
           {
