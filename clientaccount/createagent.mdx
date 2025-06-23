@@ -2,3 +2,118 @@
 title: "Create Agent"
 description: "Easily create a custom AI agent that can handle conversations, qualify leads, book appointments, and automate client workflows."
 ---
+
+## **Create a New Agent**
+
+**Steps:**
+
+<Steps>
+  <Step title="Inside the Client Account" stepNumber={1} titleSize="p">
+    - Go to the **“Agents”** tab
+    - Click **“Create an Agent.”**
+  </Step>
+  <Step title="Choose from Agent Library" stepNumber={2} titleSize="p">
+    - **Option 1:** Use a **predefined template** from the library. (e.g., Appointment Booking).
+    - **Option 2:** Start from a **blank template** to build your custom agent.
+  </Step>
+</Steps>
+
+## **Agent Settings**
+
+### **Basic Information**
+
+- Agent Name
+- Select Voice & Language
+- Assign Knowledge Base (for answering queries with uploaded docs, URLs, etc.)
+
+### **Settings**
+
+<CardGroup cols={2}>
+  <Card title="Speech Settings" icon="volume-high" color="#034737">
+    Control AI agent interactions. Adjust responsiveness, tone, and naturalness for better calls.
+  </Card>
+  <Card title="Transcription Settings" icon="pencil-mechanical" color="#034737">
+    Control voice-to-text conversion. Adjust transcription quality, formatting, and keyword handling for accurate call data.
+  </Card>
+  <Card title="Call Settings" icon="phone-volume" color="#034737">
+    - Configure call behavior, including duration, silence detection, voicemail handling, and more. These settings help tailor the overall call flow.
+  </Card>
+  <Card title="Agency Settings" icon="house-building" color="#034737">
+    Set the LLM model and temperature to adjust AI creativity and consistency.\
+    Visible only with "Agency View" enabled in the footer.
+  </Card>
+</CardGroup>
+
+### **Prompt**
+
+<AccordionGroup>
+  <Accordion title="Design how your AI speaks and behaves">
+    - First Message\
+      The greeting or intro message is played when a call connects
+    - Task Prompt\
+      Core instruction to guide the AI on what to say or do.
+  </Accordion>
+  <Accordion title="Using Variables">
+    - Use dynamic fields in the prompt using \$
+    - Example: Hi \$Lead_Name, I see you're interested in \$Service_Type.
+  </Accordion>
+  <Accordion title="Using Tools (Actions)">
+    - Trigger actions with simple commands in the prompt
+    - Example: Use tool #Book_Calendar to schedule an appointment.
+  </Accordion>
+</AccordionGroup>
+
+### **Actions**
+
+**On-Call Actions**
+
+<AccordionGroup>
+  <Accordion title="Transfer Call">
+    - Redirect to another number or a human
+  </Accordion>
+  <Accordion title="End Call">
+    - Terminate the conversation with a polite message
+  </Accordion>
+  <Accordion title="Book Calendar">
+    - Check availability and schedule appointments
+  </Accordion>
+  <Accordion title="Custom Action">
+    - Fetch or send data via APIs (Make, N8N, Zapier)
+  </Accordion>
+</AccordionGroup>
+
+**Post-Call Actions**
+
+<AccordionGroup>
+  <Accordion title="Send Email">
+    - Send the conversation summary to the inbox
+  </Accordion>
+  <Accordion title="Send SMS">
+    - Notify the client or lead via text
+  </Accordion>
+  <Accordion title="Extract Info">
+    - Capture lead details (e.g., name, phone, intent)
+  </Accordion>
+  <Accordion title="Send to Server (Webhook)">
+    - Push call data to Deploy the AgentCRMs, Sheets, or other tools
+  </Accordion>
+</AccordionGroup>
+
+### **Deploy the Agent**
+
+Once the agent is configured, connect it to inbound/outbound channels:
+
+<AccordionGroup>
+  <Accordion title="Assign Outbound Phone Numbers">
+    - Used to place outbound calls
+    - Go to Deploy Tab → Outbound Numbers → Select a number
+  </Accordion>
+  <Accordion title="Assign Inbound Phone Numbers">
+    - Used to handle incoming calls
+    - Go to Deploy Tab → Inbound Numbers → Select a number
+  </Accordion>
+  <Accordion title="Assign Web Widgets">
+    - Used for web-based voice conversations (e.g., website live chat)
+    - Go to Deploy Tab → Web Widgets → Connect widget
+  </Accordion>
+</AccordionGroup>
