@@ -1,8 +1,102 @@
 ---
 title: "Webhook Leads"
-description: "Description of your new file."
+
 ---
 
 ## **Webhooks – Capturing & Updating Leads**
 
 Webhooks allow external tools and platforms (like CRM systems, landing pages, or marketing forms) to push data into your white-label Voice AI platform. With lead webhooks, you can **automatically add or update leads**, assign them to lists or tags, and **trigger outbound call automations** in real-time.
+
+## **Webhooks Overview**
+
+Webhooks provide a seamless way to:
+
+- **Capture new leads** from any external platform
+- **Update lead information** (e.g., name, phone, email, tags)
+- **Organize leads** into lists or apply tags for segmentation
+- **Trigger Outbound Automations** based on new lead creation
+
+Webhooks save time and improve lead response speed by automating the lead ingestion process, without any manual entry.
+
+## **What is a Lead Webhook?**
+
+A **Lead Webhook** is a unique URL where you can send HTTP POST requests to add or update lead data.
+
+## **How It Works:**
+
+- You connect your third-party platform (e.g., CRM, form builder, ad tool) to the webhook URL.
+- When a new lead is generated or updated, data is sent to the webhook.
+- The system **automatically adds or updates** the lead record in the client account.
+- Tags or lists (if configured) are applied, and **outbound automations** can be triggered instantly.
+
+## **How to Create a Webhook**
+
+Follow these steps to create a lead webhook inside your platform:
+
+ 1. Navigate to **Webhooks **Menu 
+
+- From your Client Account, go to **Settings \> Webhooks**
+
+2. Click “**Create Webhook**”
+
+- Click the **Create Webhook** button to begin.
+
+**3. Fill in the Webhook Details**
+
+- **Webhook Name** – Give a recognizable name (e.g., “Facebook Leads”)
+- **Webhook URL** – A unique system-generated endpoint where you’ll send data
+
+  <Note>
+    Example: https://demo.aivoiceagent.app/server/Customize/Webhooks/webhook.php?id=684828
+  </Note>
+
+4. Field Mapping
+
+1. Map the data fields you will send to the appropriate lead fields:
+   - First Name
+   - Last Name
+   - Phone Number
+   - Email
+   - Any custom fields (e.g., budget, service interest)
+
+5. Tag/List Management (Optional)
+
+1. Apply your desired Tags
+   - Apply default **Tags** (e.g., “facebook_ads”, “hot_leads”)
+   - Assign leads to specific **Lists** for targeted follow-up or automation.
+
+## **Sending Data via Webhook**
+
+Make a **POST **request from your external tool (e.g., Zapier, Make, N8N, CRM) to the provided webhook URL with your lead data.
+
+```
+Example Payload:
+{
+  "first_name": "John",
+  "last_name": "Doe",
+  "phone": "+1234567890",
+  "email": "john.doe@example.com",
+  "tags": ["hot_lead", "demo_requested"],
+  "list_id": "real_estate_campaign"
+}
+```
+
+<Warning>
+  If the lead already exists (matched by phone number), it will be **updated **instead of **duplicated**.
+</Warning>
+
+## **Automation Trigger**
+
+You can set up **Outbound Call Automations** to trigger when:
+
+- A **new lead is added**
+- A **lead is updated with specific tags or lists**
+
+This ensures the lead gets contacted instantly without delays.
+
+## **Use Cases**
+
+- Facebook/Instagram Ads – Capture leads from ad forms and start voice conversations instantly
+- Landing Page Forms – Send leads from your website to AI agents via webhook
+- CRM → Platform Sync – Keep your CRM leads updated and initiate outreach calls
+- Auto-assign tags/lists for dynamic campaigns
