@@ -2,3 +2,69 @@
 title: "Overview"
 description: "The Overview (Dashboard) provides a real-time summary of your call performance, agent activity, and campaign outcomes. Use it to track conversations, measure results, and optimize agent and campaign performance with clarity."
 ---
+
+## **Filters**
+
+Quickly narrow down data using the available filters:
+
+- **Agent Filter** – View metrics for specific agents.
+- **Date Filter** – Select custom date ranges to analyze performance over time.
+
+## **Overview Info Cards**
+
+The top summary cards provide a snapshot of platform performance:
+
+<CardGroup cols={2}>
+  <Card title="Total Calls" icon="phone-volume" color="#034737">
+    - Number of total voice conversations initiated or received. _e.g., 24 Calls | 100% Connected_
+  </Card>
+  <Card title="Call Minutes" icon="clock-nine" color="#034737">
+    -  Total time spent on calls and the average call duration. e.g., 45.18 minutes | 1.9 min Avg. call 
+  </Card>
+  <Card title="Goal Completed" icon="goal-net">
+    -  Calls that successfully met the intended objective (e.g., booked appointment, captured lead).  _e.g., 12 Completed | 50% Success Rate_
+  </Card>
+  <Card title="Positive Sentiment" icon="face-smile" color="#034737">
+    -  Calls marked as having positive caller sentiment, as determined by AI analysis.\
+      _e.g., 24 Positive | 100% Positive Calls_
+  </Card>
+</CardGroup>
+
+## **Graphical Reports**
+
+Visual insights help understand trends at a glance:
+
+<CardGroup cols={2}>
+  <Card title="Calls by Type" icon="phone-plus" color="#034737">
+    - Breakdown: Total, Inbound, Outbound, and Web calls
+    - Tracked across selected dates
+  </Card>
+  <Card title="Calls by Status" icon="chart-candlestick" color="#034737">
+    - Breakdown: Connected vs Not Connected
+    - Helps optimize the retry strategy and improve the connect rate
+  </Card>
+  <Card title="Calls by Goal Status" icon="chart-pie" color="#034737">
+    - Breakdown: Goal Completed vs Incomplete
+    - Identify what % of calls achieve their outcome
+  </Card>
+  <Card title="Calls by User Sentiment" icon="people-group" color="#034737">
+    - Breakdown: Positive, Neutral, Negative
+    - Monitor caller satisfaction and emotional tone
+  </Card>
+</CardGroup>
+
+## **Data Tables**
+
+Detailed breakdown for in-depth analysis:
+
+<CardGroup cols={2}>
+  <Card title="Call Ended by Reason" icon="phone-missed" color="#034737">
+    - Displays reasons why calls ended (e.g., user hang-up, agent transfer, no response)
+
+    Columns: **Reason**, **Call Count**, **Call Minutes**
+  </Card>
+  <Card title="Call Minutes by Agents" icon="clock-rotate-left" color="#034737">
+    - Track performance and talk time for each agent
+    - Columns: **Agent Name**, **Call Count**, **Total Call Minutes**
+  </Card>
+</CardGroup>
