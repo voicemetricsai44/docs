@@ -28,62 +28,54 @@ description: "Easily create a custom AI agent that can handle conversations, qua
 
 ### **Settings**
 
-- **Speech Settings**
-  - Control how the AI agent speaks and interacts during calls. Adjust the responsiveness, tone, and naturalness of the conversation for a better caller experience.
-- **Transcription Settings**
-  - Manage how voice input is converted into text. Customize transcription quality, formatting, and keyword handling for more accurate call data.
-- **Call Settings**
-  - Configure call behavior, including duration, silence detection, voicemail handling, and more. These settings help tailor the overall call flow.
-- **Agency Settings**
-  - Set the LLM model and temperature to control the AI’s creativity and consistency during conversations.
+1. **Speech Settings**
+   - Control how the AI agent speaks and interacts during calls. Adjust the responsiveness, tone, and naturalness of the conversation for a better caller experience.
+2. **Transcription Settings**
+   - Manage how voice input is converted into text. Customize transcription quality, formatting, and keyword handling for more accurate call data.
+3. **Call Settings**
+   - Configure call behavior, including duration, silence detection, voicemail handling, and more. These settings help tailor the overall call flow.
+4. **Agency Settings**
+   - Set the LLM model and temperature to control the AI’s creativity and consistency during conversations.
 
-    <Note>
-      This section is visible only if "Agency View" is enabled in the client account menu footer.
-    </Note>
+     <Note>
+       This section is visible only if "Agency View" is enabled in the client account menu footer.
+     </Note>
 
 ### **Prompt**
 
-**Design how your AI speaks and behaves:**
-
-- First Message: The greeting or intro message is played when a call connects
-- Task Prompt: Core instruction to guide the AI on what to say or do
-
-**Using Variables**
-
-- Use dynamic fields in the prompt using \$
-- Example: Hi \$Lead_Name, I see you're interested in \$Service_Type.
-
-**Using Tools (Actions)**
-
-- Trigger actions with simple commands in the prompt.
-- Example: Use tool #Book_Calendar to schedule an appointment.
+1. **Design how your AI speaks and behaves:**
+   - First Message: The greeting or intro message is played when a call connects
+   - Task Prompt: Core instruction to guide the AI on what to say or do
+2. **Using Variables**
+   - Use dynamic fields in the prompt using \$
+   - Example: Hi \$Lead_Name, I see you're interested in \$Service_Type.
+3. **Using Tools (Actions)**
+   - Trigger actions with simple commands in the prompt.
+   - Example: Use tool #Book_Calendar to schedule an appointment.
 
 ### **Actions**
 
-**On-Call Actions**
-
-- **Transfer Call** – Redirect to another number or a human
-- **End Call** – Terminate conversation with a polite message
-- **Book Calendar** – Check availability and schedule appointments
-- **Custom Action** – Fetch or send data via APIs (Make, N8N, Zapier)
-
-**Post-Call Actions**
-
-- **Send Email** – Send conversation summary to inbox
-- **Send SMS** – Notify client or lead via text
-- **Extract Info** – Capture lead details (e.g., name, phone, intent)
-- **Send to Server (Webhook)** – Push call data to CRMs, Sheets, or other tools
+1. **On-Call Actions**
+   - **Transfer Call** – Redirect to another number or a human
+   - **End Call** – Terminate conversation with a polite message
+   - **Book Calendar** – Check availability and schedule appointments
+   - **Custom Action** – Fetch or send data via APIs (Make, N8N, Zapier)
+2. **Post-Call Actions**
+   - **Send Email** – Send conversation summary to inbox
+   - **Send SMS** – Notify client or lead via text
+   - **Extract Info** – Capture lead details (e.g., name, phone, intent)
+   - **Send to Server (Webhook)** – Push call data to CRMs, Sheets, or other tools
 
 ### **Deploy the Agent**
 
 Once the agent is configured, connect it to inbound/outbound channels:
 
-- **Assign Outbound Phone Numbers**
-  - Used to place outbound calls
-  - Go to Deploy Tab → Outbound Numbers → Select a number
-- **Assign Inbound Phone Numbers**
-  - Used to handle incoming calls
-  - Go to Deploy Tab → Inbound Numbers → Select a number
-- **Assign Web Widgets**
-  - Used for web-based voice conversations (e.g., website live chat)
-  - Go to Deploy Tab → Web Widgets → Connect widget
+1. **Assign Outbound Phone Numbers**
+   - Used to place outbound calls
+   - Go to Deploy Tab → Outbound Numbers → Select a number
+2. **Assign Inbound Phone Numbers**
+   - Used to handle incoming calls
+   - Go to Deploy Tab → Inbound Numbers → Select a number
+3. **Assign Web Widgets**
+   - Used for web-based voice conversations (e.g., website live chat)
+   - Go to Deploy Tab → Web Widgets → Connect widget
