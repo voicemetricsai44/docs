@@ -64,6 +64,9 @@
               "leadmanagement/importlead",
               "leadmanagement/exportlead",
               "leadmanagement/customfield",
+              "leadmanagement/webhookleads",
+              "leadmanagement/outboundcampaign",
+              "leadmanagement/outboundautomation",
               "leadmanagement/list",
               "leadmanagement/tag"
               
