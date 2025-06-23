@@ -61,7 +61,9 @@
               "leadmanagement/customfield",
               "leadmanagement/webhookleads",
               "leadmanagement/outboundcampaign",
-              "leadmanagement/outboundautomation"
+              "leadmanagement/outboundautomation",
+              "calls/callhistory",
+              "calls/callanalytics"
             ]
           },          
           {
