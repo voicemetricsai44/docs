@@ -63,7 +63,9 @@
               "leadmanagement/outboundcampaign",
               "leadmanagement/outboundautomation",
               "calls/callhistory",
-              "calls/callanalytics"
+              "calls/callanalytics",
+              "integrations/integrations",
+              "integrations/users"
             ]
           },          
           {
