@@ -59,6 +59,8 @@
             "group": "Lead Management",
             "pages": [
               "leadmanagement/addlead",
+               "leadmanagement/list",
+              "leadmanagement/tag",
               "leadmanagement/updatelead",
               "leadmanagement/filterlead",
               "leadmanagement/importlead",
@@ -66,10 +68,7 @@
               "leadmanagement/customfield",
               "leadmanagement/webhookleads",
               "leadmanagement/outboundcampaign",
-              "leadmanagement/outboundautomation",
-              "leadmanagement/list",
-              "leadmanagement/tag"
-              
+              "leadmanagement/outboundautomation"           
             ]
           },
           {
