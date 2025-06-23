@@ -50,7 +50,9 @@
               "clientaccount/manageclient",
               "clientaccount/overview",
               "clientaccount/createagent",
-              "clientaccount/knowledgebase"
+              "clientaccount/knowledgebase",
+              "clientaccount/phonenumbers",
+              "clientaccount/webwidgets"
             ]
           },
           {
