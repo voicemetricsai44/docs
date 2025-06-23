@@ -1,0 +1,110 @@
+---
+title: "Knowledge Base"
+description: "Your Knowledge Base is a central place to store all the relevant information that your AI agents can refer to during conversations. It powers the agent’s ability to answer questions accurately and contextually based on uploaded content."
+---
+
+## **Overview**
+
+A Knowledge Base allows you to upload reference materials such as:
+
+- Product documents
+- Service descriptions
+- FAQs
+- Help articles
+- Company details
+- CRM data (in readable format)
+
+This content becomes part of the agent's “brain” and helps it respond more intelligently during calls.
+
+## **Create Knowledge Base**
+
+You can manually create a new Knowledge Base and add different content types:
+
+**Supported Content Types:**
+
+- **Files** – Upload PDF, DOCX, TXT, and other readable formats
+- **Page URLs** – Add website URLs to fetch indexed page content
+- **Text Snippets** – Add plain text manually
+
+**Steps to Add:**
+
+1. Go to the **Knowledge Base** tab in your dashboard.
+2. Use the **Add** option:
+   - Click **Upload File** to select and upload documents.
+   - Click **Add URL** to enter website links.
+   - Click **Add Text** to enter plain text notes.
+
+## **Import Knowledge Base**
+
+**Overview**
+
+You can easily import existing Knowledge Base (Infobase) content from supported providers like **Retell AI** and **Vapi** to jumpstart your agent training process with pre-existing data.
+
+<Warning>
+  This feature is only available for Agency users, **not for client app users**. Make sure to enable Agency View from the footer of the client account menu to access this functionality.
+</Warning>
+
+This helps you preserve structured data like FAQs, documents, and external sources already curated in your current setup.
+
+## **Retell AI – Knowledge Base Import**
+
+**What You Can Import**
+
+- Knowledge Base folders along with associated content — Files (PDF, DOCX, etc.), URLs, and Text Snippets.
+
+**Steps to Import from Retell AI**
+
+<Steps>
+  <Step title="Go to Knowledge Base Tab" stepNumber={1} titleSize="p">
+    Navigate to the Knowledge Base section inside the client account.
+  </Step>
+  <Step title="Click “Import”" stepNumber={2} titleSize="p">
+    Click the Import button at the top right.
+  </Step>
+  <Step title="Select Folder (Group)" stepNumber={3} titleSize="p">
+    Choose the existing folder (group) you want to import.
+  </Step>
+  <Step title="Complete the Import" stepNumber={4} titleSize="p">
+    Confirm the import to bring in all associated files, URLs, and text snippets.
+
+    <Note>
+      You can also create a new folder by clicking **“Add”** while in **Agency View**..
+    </Note>
+  </Step>
+</Steps>
+
+**Client-Side Access**
+
+Your client can also log in and add New Files, URLs, and Text entries directly from their account under the Knowledge Base tab. 
+
+<Note>
+  Creating or importing a knowledge base is **optional**.
+</Note>
+
+- If your client uploads a file, adds a URL, or inputs text, the system will automatically create a knowledge base folder using the **client account name** and link it.
+- Use the import option **only if** you want to assign an **existing folder** or link **multiple folders** to the client account.
+
+## **Vapi – Knowledge Base Import**
+
+**What You Can Import**
+
+- **Files only** (No support for URLs or text snippets)
+
+**Steps to Import from Vapi**
+
+<Steps>
+  <Step title="Go to Knowledge Base Tab" stepNumber={1} titleSize="p">
+    - Inside the client account, navigate to Knowledge Base.
+  </Step>
+  <Step title='Click "Import from Vapi."' stepNumber={2} titleSize="p">
+    - The system will fetch available files.
+  </Step>
+  <Step title="Select and Import Files" stepNumber={3} titleSize="p">
+    - Choose the files you want to bring into the workspace.
+    - Click Import to add them to your agent’s knowledge base.
+  </Step>
+</Steps>
+
+**Client-Side Access**
+
+Your client can log in and upload additional files as needed via the Knowledge Base interface.
