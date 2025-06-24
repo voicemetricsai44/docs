@@ -38,3 +38,109 @@ description: "Get started with building your first AI Voice Agent in just a few 
     - **Option 2:** Start from a **blank template** to build your custom agent.
   </Step>
 </Steps>
+
+## **Core Agent Setup**
+
+**LLM Configuration**
+
+1. Navigate to **Settings \> Agency Settings**
+2. Select your preferred **LLM model** (e.g., GPT-4, Claude)
+3. Adjust the **temperature** based on how creative or strict you want the responses to be.
+
+<Tip>
+  _Remember: Enable _**_Agency View_**_ in the client account footer to access these settings._ 
+</Tip>
+
+## **Using Dynamic Variables in Prompts**
+
+Dynamic variables allow your agent to personalize conversations using lead-specific data.\
+These variables are automatically filled with values during live calls.
+
+**What You Can Do:**
+
+- Greet leads by their name
+- Confirm email or phone details
+- Mention custom fields like service type, location, budget, etc.
+
+**How to use:**\
+ Insert a variable into the prompt using the \$ symbol and choose the lead field name.
+
+**Examples:**
+
+- Hi \$LeadName, thanks for calling\! How can I help you today?
+- I see your preferred service is \$ServiceType — let me assist you with that.
+- We’ll send the confirmation to \$EmailAddress after booking.
+
+You can use both default and custom fields.
+
+## **Using Function Calling in Prompts**
+
+Function calling allows your agent to **take actions** during the conversation, such as:
+
+- Transfer the call to a live agent
+- Check calendar availability and book appointments
+- Fetch data from a CRM or external source
+- End or redirect calls based on lead response
+- Make API calls to your internal systems
+
+**How to use:**\
+ In your prompt, call the action by using its **tool name** with a # prefix.
+
+**Examples:**
+
+- Use tool #Book_Calendar to check availability and book an appointment.
+- Use tool #Send_SMS after collecting the caller’s phone number.
+
+Here’s **Step 4: Deploying Your Agents** — written and formatted to match the previous sections
+
+## **Adding a Knowledgebase to Your AI Agent**
+
+You can equip your AI agent with a knowledge base to improve its ability to answer detailed questions, handle objections, and provide accurate information during conversations. This enables the agent to retrieve data from uploaded documents, public URLs, or custom-written content, providing instant access to key business knowledge.
+
+**How It Works**
+
+1. **Upload Knowledge Sources**
+   - Go to the **Knowledgebase** menu
+   - Upload content via:
+     - Files (PDF, DOCX, TXT)
+     - Public URLs (e.g., blogs, help articles)
+     - Direct Text input (copy-paste custom content)
+2. **Attach to Agent**
+   - Open the **Agent Settings**
+   - Select your uploaded knowledge base from the dropdown
+3. **Real-Time Retrieval**
+   - During calls, the AI automatically refers to the knowledge base to provide intelligent, relevant responses — all in real time.
+
+## **Supported Formats**
+
+You can upload knowledge in any of the following formats:
+
+- PDF documents
+- Microsoft Word (.docx)
+- Plain text files (.txt)
+- Publicly accessible web URLs
+- Manually entered text content
+
+<Warning>
+  Private or password-protected URLs are currently not supported.
+</Warning>
+
+## **FAQs**
+
+<AccordionGroup>
+  <Accordion title="Q1. Can I link more than one document to an agent?">
+     **Yes**, multiple files, URLs, or text entries can be combined in a single knowledge base and linked to your agent.
+  </Accordion>
+  <Accordion title="Q2. Does the knowledgebase name affect AI performance?">
+     **No**. The name is only for your internal use — the agent uses content, not the title, during responses.
+  </Accordion>
+  <Accordion title="Q3. Can I edit the knowledgebase later?">
+     **Yes**. You can update, delete, or add new files or content anytime.
+  </Accordion>
+  <Accordion title="Q4. How fast is the agent at using the knowledgebase?">
+    The agent uses real-time retrieval during live conversations, with no noticeable delay.
+  </Accordion>
+  <Accordion title="Q5. Will the AI repeat text from documents word-for-word?">
+     **No**. The agent understands and paraphrases content naturally for a smooth, human-like experience.
+  </Accordion>
+</AccordionGroup>
