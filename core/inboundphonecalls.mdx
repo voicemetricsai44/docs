@@ -1,4 +1,38 @@
 ---
 title: "Inbound Phone Calls"
-description: "Description of your new file."
 ---
+
+## **Overview**
+
+Handling **inbound phone calls** is easy and fully automated. Once your agent is connected to a phone number, the AI can instantly answer incoming calls, qualify leads, extract relevant data, and even book appointments — all without human intervention.
+
+## **How It Works**
+
+1. **Create an AI Agent**\
+    Build or import your agent and configure its prompts and actions.
+2. **Connect a Phone Number**
+   - Navigate to the **Phone Numbers** section
+   - Import a number from **Vapi** or **Retell AI**
+   - Assign the number to your agent in the **Deploy** tab
+3. **Start Receiving Calls**
+   - The AI will automatically handle all incoming calls on the connected number
+   - It will greet the caller, ask predefined questions, and complete the conversation
+4. **After the Call**
+   - **Extract information** using the #Extract_Info action
+   - **Create or update leads** in your connected CRM
+   - **Auto-book calendar appointments** via tools like Google Calendar, GHL, or [Cal.com](http://Cal.com)
+   - Store call logs, summaries, and transcripts under **Call History**
+
+**Important**
+
+<Check>
+  Only phone numbers imported from **Vapi** or **Retell AI** are supported currently
+</Check>
+
+<Check>
+  Ensure the number is correctly **assigned** to the agent for the inbound calls to work
+</Check>
+
+<Check>
+  Make sure **actions** like #Extract_Info, #Book_Calendar, or #Send_Post_Call_Event are configured to complete the workflow
+</Check>
