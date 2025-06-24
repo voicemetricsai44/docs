@@ -1,0 +1,45 @@
+---
+title: "Stripe API"
+---
+
+## How to generate an API Key from a Stripe Account
+
+**1. Log in to Your Stripe Account**
+
+- Go to the [Stripe Dashboard](https://dashboard.stripe.com/) and log in using your credentials.
+
+**2. Navigate to API Settings**
+
+- From the dashboard, click on Developers in the left-hand menu.
+- Select API Keys from the submenu.
+
+**3. Create a New API Key**
+
+- Under the Standard Keys section, click "**Create Secret Key**".
+- Enter a name or description for the key (optional but recommended for identification).
+- Click "**Create**" to generate the key.
+
+**4. Copy the API Key**
+
+- Once created, the **secret API key** will be displayed.
+- **Copy the key immediately**, as you won’t be able to view it again later.
+
+**5. Secure Your API Key**
+
+- **Store the API key** in a secure location, such as an environment variable or a secure key management system.
+- **Do not share your API key publicly** to prevent unauthorized access.
+
+## Test Mode Vs Live Mode
+
+<Note>
+  Use test API keys for **testing **your application during development.
+
+  Use live API keys for **production **environments to process actual transactions.
+</Note>
+
+<Warning>
+  **Copy the Key Immediately**, as you won’t be able to view it again later.
+
+  - Regularly rotate your API keys to maintain security.
+  - You can revoke and generate new keys from the API Keys section.
+</Warning>
