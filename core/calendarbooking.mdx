@@ -1,4 +1,58 @@
 ---
 title: "Calendar Booking"
-description: "Description of your new file."
 ---
+
+## **Overview**
+
+The **Book Calendar Action** enables your voice agent to automatically check calendar availability and book appointments for callers. If the requested time is unavailable, the agent will suggest alternative time slots. This helps streamline bookings and improves the caller experience without human intervention.
+
+## **How It Works**
+
+1. The caller shares a preferred time or date.
+2. The agent checks the integrated calendar in real-time.
+3. If the time is free, it books the appointment.
+4. If not, it offers available time slots to the caller.
+5. Once confirmed, the event is added to your calendar.
+
+## **Supported Calendar Integrations**
+
+- Google Calendar
+- GoHighLevel Calendar (GHL)
+- [Cal.com](http://Cal.com)
+
+## **Setup Instructions**
+
+<Steps>
+  <Step title="Install the Integration" stepNumber={1} titleSize="p">
+    Go to **Settings** → **Integrations** in your client account. Choose the calendar platform you want to integrate:
+
+    - **Google Calendar**: Click _Connect Google_, sign in with your Google account, and allow access.
+    - **GHL Calendar**: Enter your GHL API Key and connect the workspace.
+    - [**Cal.com**](http://Cal.com): Provide your [Cal.com](http://Cal.com) API Key and connect your account.
+
+      <Note>
+        You must **authorize **the integration to access calendar data and manage bookings.
+      </Note>
+  </Step>
+  <Step title="Create the Book Calendar Action" stepNumber={2} titleSize="p">
+    - Go to **Actions** → Click **Create Action** → Select **Book Calendar**.
+    - Choose the connected calendar (Google, GHL, or [Cal.com](http://Cal.com)).
+    - Map the required inputs (e.g., caller name, email, desired date/time).
+    - Save the action
+  </Step>
+  <Step title="Use in Agent Prompt" stepNumber={3} titleSize="p">
+    Insert the action in your agent prompt to enable booking functionality.
+
+    <Note>
+      **Example Prompt:**
+
+      Use tool #Book_Calendar to check availability and schedule an appointment based on the caller's preferred time.
+    </Note>
+  </Step>
+</Steps>
+
+## **Best Practices**
+
+- Collect essential info (name, email, preferred time) early in the conversation.
+- Guide callers if their preferred time is not available.
+- Use dynamic prompts to personalize appointment flow.
