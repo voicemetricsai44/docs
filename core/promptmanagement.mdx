@@ -2,3 +2,71 @@
 title: "Prompt Management"
 description: "Description of your new file."
 ---
+
+## **Overview**
+
+Prompts are the brain of your AI agent — they define how the agent talks, what it does, and how it guides conversations. This section covers how to manage prompts effectively, customize responses, and integrate logic using dynamic variables and function calling.
+
+## **Prompt Types**
+
+You can manage prompts under the **Agent \> Prompt tab**. There are two main sections:
+
+1. **Welcome Message**\
+    This is the first thing your caller hears. Set the tone and purpose of the call.
+
+   <Note>
+     **_Example_**:\
+      “Hi\! This is Ava, your virtual assistant. I’m here to help you with your enquiry. How can I assist you today?”
+   </Note>
+2. **Task Prompt (Core Prompt)**\
+   This is the main instruction that drives the conversation. It defines the behavior, tone, goal, and actions of your agent.
+
+   <Note>
+     **_Example_**:\
+     “You are a lead qualification agent. Ask relevant questions, gather contact info, and book a calendar appointment if the user qualifies.”
+   </Note>
+
+## **Using Dynamic Variables in Prompts**
+
+You can insert variables into prompts using the **\$ key**, pulling in data like lead name, email, or custom fields.
+
+```
+Example Variables:
+$lead_name
+$phone_number
+$appointment_date
+```
+
+<Note>
+  **Example Prompt with Variables:**
+
+  “Hi \$lead_name\! I noticed you were interested in our service. Can I confirm your email as \$email?”
+</Note>
+
+## **Using Function Calling in Prompts**
+
+To perform actions like booking an appointment or sending an SMS, use **function-calling tools** directly in your prompt.
+
+**Supported Actions:**
+
+- Book a calendar slot
+- Transfer the call
+- Send an SMS
+- Lookup data via API
+- End the call
+
+**Syntax for Function Calls: **Use the tool name inside your prompt.
+
+<Note>
+  **Examples**:
+
+    “Use tool **#Book_Calendar** to find available time slots and schedule a meeting.”\
+   “After collecting the phone number, use **#Send_SMS** to send a confirmation.”
+</Note>
+
+## **Best Practices**
+
+- Keep your welcome prompt short and conversational.
+- Use clear and structured instructions in your task prompt.
+- Avoid overloading prompts with too many instructions — break them into steps if needed.
+- Test prompts with real calls and adjust based on behavior.
