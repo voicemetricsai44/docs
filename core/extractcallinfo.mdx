@@ -2,3 +2,61 @@
 title: "Extract Call Info"
 description: "Description of your new file."
 ---
+
+## **Overview**
+
+The **Extract Info** action allows your voice agent to capture and store key details shared by the caller during a conversation. This is useful for collecting structured data like names, contact details, booking info, or custom lead qualifications—automatically and accurately.
+
+## **How It Works**
+
+1. The agent interacts with the caller during the conversation.
+2. The **Extract Info** action identifies and extracts predefined data points.
+3. Extracted data is stored in the **Call History** for future reference.
+4. Data can be forwarded to external tools (like CRMs, Sheets) using the #Post_Call_Event action.
+
+## **What You Can Extract**
+
+You can extract one or more of the following from a single call:
+
+- Name
+- Phone Number
+- Email Address
+- Interest Level
+- Booking Date / Time
+- Call Rating
+- Any custom field relevant to your workflow
+
+<Note>
+  Extracted values are tagged and stored automatically. **No need for manual input.**
+</Note>
+
+## **Setup Instructions**
+
+1. Navigate to **Actions** → Click **Post Call** → Select **Extract Info**.
+2. **Define the fields** you want to extract from the conversation:\
+    **Example:**
+   - **What information should be extracted?**\
+      _Describe the data you want to capture from the call._\
+      _e.g., Capture caller name from conversation_
+   - **Info Name**\
+      _Provide a title for the field_\
+      _e.g. Name_
+   - **Info Type**\
+      _Select the type of data to extract:_\
+      _e.g. Text_
+3. Click **Save** to complete the action setup.
+
+## **Sending Data to Other Tools**
+
+After data is extracted, use the #Post_Call_Event action to push this info to:
+
+- CRM systems
+- Google Sheets
+- Webhooks or APIs
+- Marketing tools
+
+## **Best Practices**
+
+- Clearly define what data to extract.
+- Combine with #Post_Call_Event to create seamless workflows.
+- Test with sample calls to validate extraction accuracy.
