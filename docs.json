@@ -122,7 +122,7 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Home",
+          "anchor": "**House**",
           "href": "https://voicemetrics.ai/",
           "icon": {
                   "name": "house-chimney",
@@ -130,17 +130,17 @@
                   }
         },
         {
-          "anchor": "Submit Ticket",
+          "anchor": "**Submit Ticket**",
           "href": "https://support.voicemetrics.ai/support/tickets/new",
-          "icon": "user-headset"
+          "icon": "user-headset", "icon-color": "#FF0000"
         },
         {
-          "anchor": "Roadmap",
+          "anchor": "**Roadmap**",
           "href": "https://roadmap.voicemetrics.ai/t/roadmap-sbia2",
           "icon": "road"
         },
         {
-          "anchor": "Community",          
+          "anchor": "**Community**",          
           "href": "https://discord.com/channels/1357685642347286651/1357685643500847280",
           "icon": "slack"
         }
