@@ -126,8 +126,8 @@
     }
   },
   "logo": {
-    "light": "/logo/Vm_logo.png",
-    "dark": "/logo/Vm_logo.png"
+    "light": "/logo/VM_120x24_white.png",
+    "dark": "/logo/VM_120x24.png"
   },
   "navbar": {
     "links": [
