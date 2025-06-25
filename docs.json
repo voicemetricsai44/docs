@@ -124,7 +124,10 @@
         {
           "anchor": "Home",
           "href": "https://voicemetrics.ai/",
-          "icon": "house-chimney"
+          "icon": {
+                  "name": "house-chimney",
+                  "color": "#FF0000"
+                  }
         },
         {
           "anchor": "Submit Ticket",
