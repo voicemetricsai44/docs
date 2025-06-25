@@ -124,12 +124,12 @@
         {
           "anchor": "Home",
           "href": "https://voicemetrics.ai/",
-          "icon": "home"
+          "icon": "house-chimney"
         },
         {
           "anchor": "Submit Ticket",
           "href": "https://support.voicemetrics.ai/support/tickets/new",
-          "icon": "support"
+          "icon": "user-headset"
         },
         {
           "anchor": "Roadmap",
