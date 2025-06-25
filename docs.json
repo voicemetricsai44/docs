@@ -4,7 +4,7 @@
   "name": "Voicemetrics",
   "colors": {
     "primary": "#000000",
-    "light": "#ffffff",
+    "light": "#034737",
     "dark": "#32384D"
   },
   "favicon": "logo/fav.png",
@@ -129,8 +129,7 @@
         {
           "anchor": "Submit Ticket",
           "href": "https://support.voicemetrics.ai/support/tickets/new",
-          "icon": "user-headset", 
-          "icon-color": "#FF0000"
+          "icon": "ticket" 
         },
         {
           "anchor": "Roadmap",
