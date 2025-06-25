@@ -130,7 +130,7 @@
     "dark": "/logo/Vm_logo.png"
   },
   "navbar": {
-    "primary": [
+    "links": [
       {
         "label": "Support",
         "href": "https://support.voicemetrics.ai/support/tickets/new"
