@@ -1,10 +1,7 @@
 ---
 title: "Client Subscription"
+description: "This guide explains how clients subscribe to a plan and continue using the platform after their trial ends. It covers trial access, plan details, billing flow, minute usage, and how agencies profit."
 ---
-
-## **Client Subscription Overview**
-
-This guide explains how clients subscribe to a plan and continue using the platform after their trial ends. It covers trial access, plan details, billing flow, minute usage, and how agencies profit.
 
 ## **Free Trial Access**
 
@@ -56,44 +53,47 @@ Once the trial ends, the client is prompted to choose a subscription plan
 
 ## **Refill Add-On Minutes (Auto Refill)**
 
-<Accordion title="Manual Refill" iconType="regular">
-  When free minutes run out, clients can continue usage through **add-on minutes**.
+When free minutes run out, clients can continue usage through **add-on minutes**.
 
-  - Clients **select a refill amount** (e.g., 100 / 500 / 1,000 minutes).
-  - The refill is stored in a wallet and used automatically once free minutes are exhausted.
-</Accordion>
+- Clients select a refill amount (e.g., 100 / 500 / 1,000 minutes).
+- The refill is stored in a wallet and used automatically once free minutes are exhausted.
 
-<Accordion title="Auto Refill" iconType="regular">
-  When the wallet balance drops below **10%** of the last refill amount, the system **auto-refills**.
+**Auto Refill:**
 
-  - Ensures **uninterrupted service** with no manual top-ups.
-  - The auto-refill amount is billed directly from the **client’s saved card.**
-</Accordion>
+- When the wallet balance drops below **10%** of the last refill amount, the system **auto-refills**.
+- Ensures uninterrupted service with no manual top-ups.
+- The auto-refill amount is billed directly from the client’s saved card.
 
-<Accordion title="Minute Usage Flow" iconType="regular">
-  - The platform first uses the **free minutes** from the active subscription plan.
-  - **After free minutes:**
-    - Minutes are consumed from the **Add-On Wallet**.
-    - If the wallet is low, **auto-refill** activates based on settings.
-  - Clients can monitor everything inside their **Billing Dashboard**.
-</Accordion>
+**Minute Usage Flow**
+
+1. The platform first uses the **free minutes** from the active subscription plan.
+2. After free minutes:
+   - Minutes are consumed from the **Add-On Wallet**.
+   - If the wallet is low, **auto-refill** activates based on settings.
+
+Clients can monitor everything inside their **Billing Dashboard**.
 
 ## **Summary**
 
-<Steps>
-  <Step title="Clients begin with a free trial — limited time and minutes." stepNumber={1} titleSize="p">
-    Agency can provide free days and free minutes for a limited time duration
-  </Step>
-  <Step title="After the trial, they must subscribe to a plan." titleSize="p">
+<Tabs>
+  <Tab title="Clients Journey">
+    - Clients begin with a **free trial**, limited in time and minutes.
+    - After the trial, they must **subscribe to a plan**.
+  </Tab>
+  <Tab title="Plans Offer">
     **Plans offer:**
 
     - Free monthly minutes
     - Per-minute rates after usage
     - Auto-refill to avoid downtime
-  </Step>
-  <Step title="Refill Minutes" stepNumber={3} titleSize="p">
-    - **Add-on wallets** are billed automatically to keep campaigns running.
+  </Tab>
+  <Tab title="Add-ons">
+    - **Add-on wallets** are billed automatically to keep campaigns running.Transparent billing and simple controls for both agency and client.
+  </Tab>
+  <Tab title="Stripe Payments">
     - Agencies retain **100% of all payments**, directly via **Stripe**.
+  </Tab>
+  <Tab title="Billing">
     - Transparent billing and simple controls for both agency and client.
-  </Step>
-</Steps>
+  </Tab>
+</Tabs>
