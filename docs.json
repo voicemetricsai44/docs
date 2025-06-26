@@ -108,7 +108,7 @@
           "icon": "house-chimney"
         },
         {
-          "anchor": "Submit Ticket",
+          "anchor": "Support",
           "href": "https://support.voicemetrics.ai/support/tickets/new",
           "icon": "ticket" 
         },
