@@ -21,9 +21,10 @@
             ]
           },
           {
-            "group": "Getting Started",
+            "group": "Overview",
             "pages": [        
-              "overview"
+              "agencyapp",
+              "clientapp"
             ]
           },
            {
