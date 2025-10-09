@@ -41,6 +41,7 @@
             "pages": [
               "Rebilling/stripeint",
               "Rebilling/createsaas",
+              "Rebilling/enablerebilling",
               "Rebilling/assignsaas",
               "Rebilling/clientsub"
             ]
