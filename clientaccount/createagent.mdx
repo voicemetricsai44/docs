@@ -9,16 +9,17 @@ description: "Easily create a custom AI agent that can handle conversations, qua
 
 <Steps>
   <Step title="Login as Client Account" stepNumber={1} titleSize="p">
-    - Go to the **“Agents”** tab under Agent Hub.
+    - Go to the **“Agents”** menu under **Agent Hub.**
     - Click **“AddAgent.”**
+    - Tap the **⚙️gear icon** to edit, clone, or delete agents
 
-    ![Screen_024.jpg](/images/Screen_024.jpg)
+    ![Agent3 Pn](/images/agent3.png)
   </Step>
   <Step title="Choose from Agent Library" stepNumber={2} titleSize="p">
     - **Option 1:** Use a **predefined template** from the library. (e.g., Appointment Booking).
     - **Option 2:** Start from a **blank template** to build your custom agent.
 
-    ![Screen_013.jpg](/images/Screen_013.jpg)
+    ![Template Pn](/images/template.png)
   </Step>
 </Steps>
 
@@ -30,24 +31,22 @@ description: "Easily create a custom AI agent that can handle conversations, qua
 - Select Voice & Language
 - Assign Knowledge Base (for answering queries with uploaded docs, URLs, etc.)
 
-![Screen_019.jpg](/images/Screen_019.jpg)
+![Info Pn](/images/info.png)
 
 ### **Settings**
 
 1. **Speech Settings**
    - Control how the AI agent speaks and interacts during calls. Adjust the responsiveness, tone, and naturalness of the conversation for a better caller experience.
-2. **Transcription Settings**
-   - Manage how voice input is converted into text. Customize transcription quality, formatting, and keyword handling for more accurate call data.
+   - Add the Inactivity Reminder Messages - Messages to play when the user is inactive for a specified duration.
 3. **Call Settings**
-   - Configure call behavior, including duration, silence detection, voicemail handling, and more. These settings help tailor the overall call flow.
-4. **Agency Settings**
+   - Configure call behavior, including max call duration, max ring duration. These settings help tailor the overall call flow.
    - Set the LLM model and temperature to control the AI’s creativity and consistency during conversations.
 
      <Note>
        This section is visible only if "Agency View" is enabled in the client account menu footer.
      </Note>
 
-![Screen_020.jpg](/images/Screen_020.jpg)
+![Callsettings Pn](/images/callsettings.png)
 
 ### **Prompt**
 
@@ -61,7 +60,7 @@ description: "Easily create a custom AI agent that can handle conversations, qua
    - Trigger actions with simple commands in the prompt.
    - Example: Use tool #Book_Calendar to schedule an appointment.
 
-![Screen_021.jpg](/images/Screen_021.jpg)
+![Prompt Pn](/images/prompt.png)
 
 ### **Actions**
 
@@ -76,7 +75,7 @@ description: "Easily create a custom AI agent that can handle conversations, qua
    - **Extract Info** – Capture lead details (e.g., name, phone, intent)
    - **Send to Server (Webhook)** – Push call data to CRMs, Sheets, or other tools
 
-![Screen_022.jpg](/images/Screen_022.jpg)
+![Actions Pn](/images/actions.png)
 
 ### **Deploy the Agent**
 
@@ -92,4 +91,4 @@ Once the agent is configured, connect it to inbound/outbound channels:
    - Used for web-based voice conversations (e.g., website live chat)
    - Go to Deploy Tab → Web Widgets → Connect widget
 
-![Screen_023.jpg](/images/Screen_023.jpg)
+![Deploy Pn](/images/deploy.png)
