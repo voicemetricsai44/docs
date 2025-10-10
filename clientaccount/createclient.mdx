@@ -1,47 +1,60 @@
 ---
 title: "Create Client Account"
-description: "Quickly set up and manage client accounts to streamline onboarding and provide personalized access to your platform. Add client details, integrate voice AI providers, and assign trial settings for a smooth start."
+description: "Quickly set up and manage client accounts to streamline onboarding and provide personalized access to your platform. Add client details, enable re-billing, and set up trial days and free call minutes for a smooth start."
 ---
 
-## **Add a New Client & Connect Voice Provider**
+## **Manual Client Setup**
 
 <Steps>
   <Step title="Log in to the Agency Panel" stepNumber={1} titleSize="p">
-    - Navigate to the “Clients” menu and click Add New Client.
-    - Enter Client Details: Provide the client's name.
+    - Navigate to the **Clients** menu and click **Add New Client**. 
+    - Now, tap the **Manual Client Setup**
   </Step>
-  <Step title="Select AI Voice Provider" stepNumber={2} titleSize="p">
-    - Choose between **Retell AI** or **Vapi AI**.
-    - Input the required API Key(s):
-      - **VAPI:** Private and Public Key.
-      - **Retell:** Private Key only.
-  </Step>
-  <Step title="Save and Next" stepNumber={3} titleSize="p">
-    - Click **Save & Next** and proceed to the next step
+  <Step title="Create Account">
+    - Enter the Client’s name and **Create Account.**
+    - Your Client Account will now be ready.
 
-    ![Screen_008.jpg](/images/Screen_008.jpg)
+    ![Manualclient Pn](/images/manualclient.png)
   </Step>
 </Steps>
 
-## **Assign Trial Days and Free Minutes**
+## **GHL Client Import**
 
-After the above steps, set up the Trial details:
+<Warning>
+  Ensure the client is a **sub-account** in your GHL Panel before importing.
+</Warning>
 
-1. After the above steps, set up the **Trial **details:
-   - **Trial Days**: The default trial period is **7 days** (editable). 
-   - After the trial ends, the client must subscribe to a plan to continue using the platform.
-   - **Free Minutes:** Default is **30 minutes** (editable).
-2. **Save Settings** to complete the setup.
+<Steps>
+  <Step title="Log in to the Agency Panel">
+    - Navigate to the **Client Account** menu and click **Add New Client**. 
+    - Now, tap the **GHL Client Import**
+  </Step>
+  <Step title="GHL Permissions">
+    - **Install GHL** from the Marketplace
+    - Select your Client, which must be listed as**“Sub-account” ** in GHL.
+    - Enable “**Voicemetrics Call**” and click **Proceed.**
 
-![Screen_009.jpg](/images/Screen_009.jpg)
+    ![Ghl1 Pn](/images/ghl1.png)
+  </Step>
+</Steps>
+
+## **Enable Re-billing**
+
+After the above steps, enable re-billing and set up your trial details.
+
+<Note>
+  Learn more about [Enable Re-Billing](https://docs.voicemetrics.ai/Rebilling/enablerebilling)
+</Note>
 
 Your client’s **trial account is now active and ready to use.**
+
+![Rebill1 Pn](/images/rebill1.png)
 
 **Recommended Next Steps:**
 
 <Check>
-  **Review Permissions**\
-  Go to the **Permissions** tab to enable or disable menus based on what you want your client to access.
+  **Review Default Permissions**\
+  Go to the **Default Permissions** tab to enable or disable menus based on what you want your client to access.
 </Check>
 
 <Check>
