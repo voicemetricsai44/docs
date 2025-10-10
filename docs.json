@@ -56,21 +56,32 @@
               "clientaccount/knowledgebase",
               "clientaccount/phonenumbers",
               "clientaccount/webwidget",
+              "integrations/integrations",
+              "clientaccount/ghl",
+              "integrations/users"
+            ]
+          },   
+          {
+            "group": "Contacts",
+            "pages": [
               "leadmanagement/addlead",
               "leadmanagement/list",
               "leadmanagement/tag",
               "leadmanagement/importlead",
               "leadmanagement/exportlead",
               "leadmanagement/customfield",
-              "leadmanagement/webhookleads",
+              "leadmanagement/webhookleads"
+            ]
+          }, 
+          {
+            "group": "Calls",
+            "pages": [
               "leadmanagement/outboundcampaign",
               "leadmanagement/outboundautomation",
               "calls/callhistory",
-              "calls/callanalytics",
-              "integrations/integrations",
-              "integrations/users"
+              "calls/callanalytics"
             ]
-          },          
+          },    
           {
             "group": "Core Concepts",
             "pages": [
