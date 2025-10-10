@@ -40,8 +40,8 @@
             "group": "Re-billing",
             "pages": [
               "Rebilling/stripeint",
-              "Rebilling/createsaas",
               "Rebilling/enablerebilling",
+              "Rebilling/createsaas",              
               "Rebilling/assignsaas",
               "Rebilling/clientsub"
             ]
