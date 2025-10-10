@@ -1,5 +1,5 @@
 ---
-title: "Webhook (Leads)"
+title: "Webhook (Contacts)"
 description: "Webhooks allow external tools and platforms (like CRM systems, landing pages, or marketing forms) to push data into your white-label Voice AI platform. With lead webhooks, you can automatically add or update leads, assign them to lists or tags, and trigger outbound call automations in real-time."
 ---
 
@@ -7,39 +7,34 @@ description: "Webhooks allow external tools and platforms (like CRM systems, lan
 
 Webhooks provide a seamless way to:
 
-- **Capture new leads** from any external platform
-- **Update lead information** (e.g., name, phone, email, tags)
-- **Organize leads** into lists or apply tags for segmentation
-- **Trigger Outbound Automations** based on new lead creation
+- **Capture new contacts **from any external platform
+- **Update contact information** (e.g., name, phone, email, tags)
+- **Organize contacts **into lists or apply tags for segmentation
+- **Trigger Outbound Automations** based on new contact creation
 
-Webhooks save time and improve lead response speed by automating the lead ingestion process, eliminating the need for manual entry.
+Webhooks save time and improve contact response speed by automating the contact ingestion process, eliminating the need for manual entry.
 
-## **What is a Lead Webhook?**
+## **What is a Contact Webhook?**
 
-A **Lead Webhook** is a unique URL where you can send HTTP POST requests to add or update lead data.
+A **Contact Webhook** is a unique URL where you can send HTTP POST requests to add or update contact data.
 
 ## **How It Works**
 
 - You connect your third-party platform (e.g., CRM, form builder, ad tool) to the webhook URL.
-- When a new lead is generated or updated, data is sent to the webhook.
-- The system **automatically adds or updates** the lead record in the client account.
+- When a new contact is generated or updated, data is sent to the webhook.
+- The system **automatically adds or updates** the contact record in the client account.
 - Tags or lists (if configured) are applied, and **outbound automations** can be triggered instantly.
 
-![Screen_042.jpg](/images/Screen_042.jpg)
+![Webhook1 Pn](/images/webhook1.png)
 
 ## **How to Create a Webhook**
 
-Follow these steps to create a lead webhook inside your platform:
+Follow these steps to create a contact webhook inside your platform: 
 
- 1. Navigate to the Webhooks Menu 
-
-- From your Client Account, go to **Settings \> Webhooks**
-
-2. Click “**Create Webhook.**”
-
-- Click the **Create Webhook** button to begin.
-
-**3. Fill in the Webhook Details**
+1. Navigate to the **Contacts** Menu 
+2. Click on three dots (⋮) \> tap “**Webhooks**”
+3. Click the **Create Webhook** button to begin.
+4. Fill in the **Webhook** Details
 
 - **Webhook Name** – Give a recognizable name (e.g., “Facebook Leads”)
 - **Webhook URL** – A unique system-generated endpoint where you’ll send data
@@ -60,11 +55,11 @@ Follow these steps to create a lead webhook inside your platform:
    - Apply default **Tags** (e.g., “facebook_ads”, “hot_leads”).
    - Assign leads to specific **Lists** for targeted follow-up or automation.
 
-![Screen_041.jpg](/images/Screen_041.jpg)
+![Webhook2 Pn](/images/webhook2.png)
 
 ## **Sending Data via Webhook**
 
-Make a **POST** request from your external tool (e.g., Zapier, Make, N8N, CRM) to the provided webhook URL with your lead data.
+Make a **POST** request from your external tool (e.g., Zapier, Make, N8N, CRM) to the provided webhook URL with your contact data.
 
 ```
 Example Payload:
@@ -86,14 +81,14 @@ Example Payload:
 
 You can set up **Outbound Call Automations** to trigger when:
 
-- A **new lead is added**
-- A **lead is updated with specific tags or lists**
+- A **new contact is added**
+- A **contact is updated with specific tags or lists**
 
-This ensures the lead gets contacted instantly without delays.
+This ensures the contact gets dialled instantly without delays.
 
 ## **Use Cases**
 
-- Facebook/Instagram Ads – Capture leads from ad forms and start voice conversations instantly
-- Landing Page Forms – Send leads from your website to AI agents via webhook
-- CRM → Platform Sync – Keep your CRM leads updated and initiate outreach calls
+- Facebook/Instagram Ads – Capture contacts from ad forms and start voice conversations instantly
+- Landing Page Forms – Send contacts from your website to AI agents via webhook
+- CRM → Platform Sync – Keep your CRM contacts updated and initiate outreach calls
 - Auto-assign tags/lists for dynamic campaigns
