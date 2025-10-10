@@ -1,6 +1,6 @@
 ---
 title: "Phone Numbers"
-description: "Manage phone numbers for inbound and outbound calls. Connect your AI agents to real phone numbers imported from supported providers, enabling full calling functionality."
+description: "Manage phone numbers for inbound and outbound calls. Connect your AI agents to real phone numbers imported from supported providers like Twilio, enabling full calling functionality."
 ---
 
 ## **Overview**
@@ -18,34 +18,27 @@ Phone numbers are essential for enabling your AI agent to make and receive calls
    Make sure **Agency View** is enabled in the client account footer for full access.
 </Warning>
 
-## **Import from Retell AI**
+## **Import Twilio Phone Number**
 
-You can import phone numbers linked to your Retell AI account directly into the platform.
+Connect your Twilio phone number to use it with your Voice AI agents.
 
 **Steps to Import:**
 
-1. Go to the **Settings \> Phone Numbers** tab inside the client account.
-2. Click **Import** and choose **Retell AI** as the source.
-3. Select one or more phone numbers from your connected Retell AI account.
-4. Click **Import** to complete the process.
+1. **Log in to your Client Panel**\
+   Go to the Phone Numbers section.
+2. **Click “Import Twilio Number”**\
+   Start the process to link your Twilio account.
+3. **Enter Your Twilio Phone Number**\
+   Input the number in **E.164 format**, e.g., `+14155552671`.
+4. **Enter Twilio Account SID**\
+   Find this in your Twilio Console; it always starts with `AC…`.
+5. **Enter Twilio Auth Token**\
+   You can locate this under **Account → Settings** in your Twilio Console.
+6. **Save and Verify**\
+   Click **Save** to complete the import. Test the number to ensure it’s correctly linked to your Voice AI agents.
 
 <Note>
   **Duplicate or already-linked numbers** cannot be imported again.
-</Note>
-
-## **Import from Vapi**
-
-If you’re using Vapi, follow the same import flow to bring in your phone numbers.
-
-**Steps to Import:**
-
-1. Go to the **Settings \> Phone Numbers** tab.
-2. Click **Import** and select **Vapi**.
-3. Choose the phone numbers you wish to import.
-4. Click **Import** to finalize.
-
-<Note>
-  Phone number support from Twilio is coming soon.
 </Note>
 
 ## **Best Practices**
@@ -54,4 +47,4 @@ If you’re using Vapi, follow the same import flow to bring in your phone numbe
 - Assign the imported number in the **Agent \> Deploy** tab.
 - Make sure your agent is properly configured before assigning a phone number.
 
-![Screen_027.jpg](/images/Screen_027.jpg)
+![Twilio Pn](/images/twilio.png)
