@@ -6,49 +6,51 @@ description: "Outbound Call Automation is similar to building an ActiveCampaign-
 ## **How It Works**
 
 <Steps>
-  <Step title="Name Your Automation" stepNumber={1} titleSize="p">
-    Give your automation a descriptive name for easy identification (e.g., “New Facebook Lead Follow-Up”).
+  <Step title="Create New Automation" stepNumber={1} titleSize="p">
+    - Go to Campaigns \> **New Campaign**
+    - Give your **Campaign name** for easy identification (e.g., “New Facebook Contact Qualification").
+    - Choose **Outbound AI Agent Number**
+    - Select Campaign type as "**Automation**".
+
+    ![Auto2 Pn](/images/auto2.png)
   </Step>
   <Step title="Choose a Trigger" stepNumber={2} titleSize="p">
-     Select what event will start the call automation:
+     Select which event will start the call automation:
 
-    - When a **Lead is Created**
-    - When a **Lead is Updated**
-    - When a **Lead is Created or Updated**
+    - When a **Contact is Created**
+    - When a **Contact is Updated**
+    - When a **Contact is Created or Updated**
+    - When a**Webhook is triggered ** (Allows your AI agent to call new contacts in GHL)
   </Step>
-  <Step title="Apply Conditions (Optional)" stepNumber={3} titleSize="p">
-    - Run automation only if:
-      - The lead belongs to a **specific list**
-      - A **specific tag** is applied
-    - This helps target only qualified leads or specific campaigns
+  <Step title="Webhook URL Setup" stepNumber={3} titleSize="p">
+    - Use the following webhook URL to trigger this automation from your CRM.\
+      Replace the macros with the **corresponding fields** from your CRM system.
+      - Go to GHL CRM \> **Sub Account** \> **Automations \> Create Workflow**
+      - Create a Trigger and paste the Webhook URL under **Actions**
+    - This helps target only new contacts, irrespective of the list and tags.
+
+    ![Auto3 Pn](/images/auto3.png)
   </Step>
-  <Step title="Assign an Agent & Phone Number" stepNumber={4} titleSize="p">
-    - Choose the AI agent that will handle the call
-    - Assign the outbound phone number (must be imported from **Vapi** or **Retell AI**)
+  <Step title="Set Call Schedule" stepNumber={4} titleSize="p">
+    - Define business hours to avoid calling outside working hours (e.g., 10 AM – 6 PM)
   </Step>
-  <Step title="Set Call Schedule" stepNumber={5} titleSize="p">
-    Define business hours to avoid calling outside working hours (e.g., 10 AM – 6 PM)
+  <Step title="Configure Redial Logic" stepNumber={5} titleSize="p">
+    If a call fails or goes unanswered:
+
+    - Retry after 15 minutes (1st attempt)
+    - Retry after 4 hours (2nd attempt)
+    - Retry next day (3rd attempt)
   </Step>
-  <Step title="Define Call Concurrency" stepNumber={6} titleSize="p">
-    - Choose how many calls to run in parallel
-    - Example: Set concurrency to 20 to dial 20 leads at once
-  </Step>
-  <Step title="Configure Redial Logic" stepNumber={7} titleSize="p">
-    1. If a call fails or goes unanswered:
-       - Retry after 15 minutes (1st attempt)
-       - Retry after 4 hours (2nd attempt)
-       - Retry next day (3rd attempt)
-  </Step>
-  <Step title="Post-Call Actions" stepNumber={8} titleSize="p">
+  <Step title="Post-Call Actions" stepNumber={6} titleSize="p">
     - AI validates the conversation
-    - Uses #Extract_Info to capture lead data (name, email, intent, etc.)
-    - Uses #Book_Calendar to schedule appointments
-    - Sends call data to CRM or Google Sheets via #Post_Call_Event webhook
+    - Uses **#Extract_Info** to capture lead data (name, email, intent, etc.)
+    - Uses **#Book_Calendar** to schedule appointments
+    - Sends call data to CRM or Google Sheets via **#Post_Call_Event** webhook
     - View full call logs and transcripts in **Call History**
   </Step>
 </Steps>
 
-![Screen_044.jpg](/images/Screen_044.jpg)
+![Auto4 Pn](/images/auto4.png)
 
 ## **Use Case Examples**
 
