@@ -1,40 +1,47 @@
 ---
 title: "Outbound Campaigns"
-description: "An Outbound Call Campaign works like a bulk email campaign — but with real-time voice conversations powered by AI. Use it to engage, qualify, and convert large volumes of leads at scale, automatically."
+description: "An Outbound Call Campaign works like a bulk email campaign — but with real-time voice conversations powered by AI. Use it to engage, qualify, and convert large volumes of contacts at scale, automatically."
 ---
 
 ## **How It Works**
 
 <Steps>
-  <Step title="Create a Lead List" stepNumber={1} titleSize="p">
-    - Import leads or sync from your CRM
-    - Organize leads into **Lists** or apply **Tags**
+  <Step title="Create a Contact List" stepNumber={1} titleSize="p">
+    - Import Contacts or sync from your CRM
+    - Organize contacts into **Lists** or apply **Tags**
+
+    <Warning>
+      1. Before starting a campaign, make sure to **import your phone number from Twilio** 
+      2. Verify it’s **active **for outbound calls.
+    </Warning>
   </Step>
   <Step title="Launch a New Campaign" stepNumber={2} titleSize="p">
-    - Go to **Campaigns** and click **Create Campaign**
+    - Go to **Campaigns** and click **New Campaign**
     - Set:
       - **Campaign Name**
-      - **Lead List / Tag**
-      - **Assigned AI Agent**
-      - **Outbound Phone Number** 
-      - **Launch Date & Time**
+      - **Assign AI Agent **&**Phone Number**  
+      - Campaign Type as**"Batch Calling"** 
+
+    ![Campaign2 Pn](/images/campaign2.png)
   </Step>
-  <Step title="Configure Call Settings" stepNumber={3} titleSize="p">
-    - **Call Concurrency** (e.g., 20 calls in parallel)
+  <Step title="Select Recepients & Schedule Campaign" stepNumber={3} titleSize="p">
+    - Choose your contact**list ** and **tags **with multiple conditions.
+    - Schedule your preferred **Date/time** to launch this campaign.
     - **Auto Redial Rules** for unanswered calls (e.g., retry after 15 mins, 4 hrs, next day)
   </Step>
   <Step title="AI Handles the Conversations" stepNumber={4} titleSize="p">
-    Your AI agent will call each lead, ask predefined questions, qualify them, and take action
+    - **Enable scheduling a follow-up call.** If the previous call was not connected.
+    - Your AI agent will call each contact, ask predefined questions,  and **take actions**
   </Step>
   <Step title="Post-Call Actions" stepNumber={5} titleSize="p">
-    - Extract key lead info using #Extract_Info
-    - Book appointments with #Book_Calendar
-    - Push lead data to CRM or Sheets using #Post_Call_Event
+    - Extract key contact info using **#Extract_Info**
+    - Book appointments with **#Book_Calendar**
+    - Push contact data to**CRM**  or Sheets using **#Post_Call_Event**
     - Full call log, summary, and transcript saved under **Call History.**
   </Step>
 </Steps>
 
-![Screen_043.jpg](/images/Screen_043.jpg)
+![Campaign3 Pn](/images/campaign3.png)
 
 ## **Features**
 
@@ -48,11 +55,11 @@ description: "An Outbound Call Campaign works like a bulk email campaign — but
 ## **Popular Use Cases**
 
 1. **Cold Outreach**
-   - Call purchased or collected cold leads to introduce your product/service and qualify interest.
-2. **Lead Reactivation**
-   - Engage cold or inactive leads from your client’s CRM with reactivation scripts.
-3. **New Lead Follow-Up**
-   - Automatically call new leads within minutes of form submissions or ad conversions.
+   - Call purchased or collected cold contacts to introduce your product/service and qualify interest.
+2. **Contact Reactivation**
+   - Engage cold or inactive contacts from your client’s CRM with reactivation scripts.
+3. **New Contact Follow-Up**
+   - Automatically call new contacts within minutes of form submissions or ad conversions.
 4. **Webinar / Event Reminders**
    - Send voice reminders before webinars, demos, or workshops and allow users to confirm or reschedule via the call.
 5. **Missed Appointment Follow-Ups**
@@ -67,7 +74,7 @@ description: "An Outbound Call Campaign works like a bulk email campaign — but
 **Important**
 
 <Note>
-  Phone numbers must be imported from **Vapi** or **Retell AI**
+  Phone numbers must be imported from **Twilio**
 </Note>
 
 <Note>
