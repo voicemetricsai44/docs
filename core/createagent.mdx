@@ -26,56 +26,60 @@ description: "Get started with building your first AI Voice Agent in just a few 
 
 <Steps>
   <Step title="Inside the Client Account" stepNumber={1} titleSize="p">
-    - Go to the **“Agents”** tab
-    - Click **“Create an Agent.”**
+    - Go to the **“Agents”** menu under **Agent Hub.**
+    - Click **“AddAgent.”**
+    - Tap the **⚙️gear icon** to edit, clone, or delete agents
 
-    ![Screen_012.jpg](/images/Screen_012.jpg)
+    ![Agent3 Pn](/images/agent3.png)
   </Step>
   <Step title="Choose from Agent Library" stepNumber={2} titleSize="p">
     - **Option 1:** Use a **predefined template** from the library. (e.g., Appointment Booking).
     - **Option 2:** Start from a **blank template** to build your custom agent.
 
-    ![Screen_013.jpg](/images/Screen_013.jpg)
+    ![Template Pn](/images/template.png)
   </Step>
 </Steps>
 
 ## **Core Agent Setup**
 
-**LLM Configuration**
+### **AI Agent Settings**
 
-1. Navigate to **Settings \> Agency Settings**
-2. Select your preferred **LLM model** (e.g., GPT-4, Claude)
-3. Adjust the **temperature** based on how creative or strict you want the responses to be.
+1. **Speech Settings**
+   - Control how the AI agent speaks and interacts during calls. Adjust the responsiveness, tone, and naturalness of the conversation for a better caller experience.
+   - Add the Inactivity Reminder Messages - Messages to play when the user is inactive for a specified duration.
+3. **Call Settings**
+   - Configure call behavior, including max call duration, max ring duration. These settings help tailor the overall call flow.
+   - Set the LLM model and temperature to control the AI’s creativity and consistency during conversations.
 
 <Tip>
   ****_Remember: Enable Agency View in the client account footer to access these settings._****
 </Tip>
 
-![Screen_055.jpg](/images/Screen_055.jpg)
+![Callsettings Pn](/images/callsettings.png)
 
 ## **Using Dynamic Variables in Prompts**
 
-Dynamic variables allow your agent to personalize conversations using lead-specific data.\
+Dynamic variables allow your agent to personalize conversations using contact-specific data.\
 These variables are automatically filled with values during live calls.
 
 **What You Can Do:**
 
-- Greet leads by their name
+- Greet contacts by their name
 - Confirm email or phone details
 - Mention custom fields like service type, location, budget, etc.
 
 **How to use:**\
-Insert a variable into the prompt using the \$ symbol and choose the lead field name.
+Insert a variable into the prompt using the \$ symbol and choose the contact field name.
 
 **Examples:**
 
-- Hi \$LeadName, thanks for calling\! How can I help you today?
+- Hi \$contact name, thanks for calling! How can I help you today?
 - I see your preferred service is \$ServiceType — let me assist you with that.
 - We’ll send the confirmation to \$EmailAddress after booking.
 
 You can use both default and custom fields.
 
-![Screen_056.jpg](/images/Screen_056.jpg)
+![calendar2.png](/images/calendar2.png)
 
 ## **Using Function Calling in Prompts**
 
@@ -127,14 +131,11 @@ You can equip your AI agent with a knowledge base to improve its ability to answ
   Private or password-protected URLs are currently not supported.
 </Warning>
 
-![Screen_057.jpg](/images/Screen_057.jpg)
+![knowledge1.png](/images/knowledge1.png)
 
 ## **FAQs**
 
 <AccordionGroup>
-  <Accordion title="Can I link more than one document to an agent?">
-     **Yes**, multiple files, URLs, or text entries can be combined in a single knowledge base and linked to your agent.
-  </Accordion>
   <Accordion title="Does the knowledgebase name affect AI performance?">
      **No**. The name is only for your internal use — the agent uses content, not the title, during responses.
   </Accordion>
