@@ -104,7 +104,6 @@
             "group": "Frequent Questions",
             "pages": [
               "faq/stripeapi",
-              "faq/voiceprovider",
               "faq/customdomain",
               "faq/rebillfaq"
             ]
