@@ -84,9 +84,7 @@
           {
             "group": "Core Concepts",
             "pages": [
-              "core/createagent",
-              "core/importagents",
-              "core/importknowledgebase",
+              "core/createagent",   
               "core/importphone",
               "core/promptmanagement",
               "core/functioncalling",
