@@ -1,4 +1,110 @@
 ---
 title: "GHL Integration"
-description: "Description of your new file."
+description: "GHL Integration lets Voicemetrics connect seamlessly with your clients’ GoHighLevel (GHL) accounts, enabling branded AI voice workflows fully synced with their CRM — ensuring a smooth, scalable experience for agencies managing multiple clients."
 ---
+
+## **Methods to Connect Your GHL Account with Voicemetrics**
+
+<CardGroup cols={2}>
+  <Card title="GHL Client Import" icon="arrow-down-up-across-line" color="#034737">
+    - 1. Import clients from GHL
+    - 2. Sync client automatically
+    - 3. Verify the client as a sub-account
+  </Card>
+  <Card title="GHL Settings" icon="gear" color="#034737">
+    - 1. Install from Marketplace
+    - 2. Enable Custom Menu insdide GHL
+    - 3. Sync CRM Data
+  </Card>
+</CardGroup>
+
+## **GHL Client Import**
+
+<Steps>
+  <Step title="Add a New Client via GHL">
+    - Log in to your **Voicemetrics Agency Panel**.
+    - Go to **Clients → Add New Client**.
+    - Click **GHL Client Import**.
+  </Step>
+  <Step title="GHL Permissions">
+    - Install **GoHighLevel (GHL)** from the Marketplace.
+    - Enable **“Voicemetrics Call”** and click **Proceed**.
+    - Select your client (must be listed as a **Sub-account** in GHL).
+  </Step>
+</Steps>
+
+## **GHL Settings**
+
+<Steps>
+  <Step title="Connect to GHL">
+    - Log in to your **Voicemetrics Agency account**.
+    - Go to **Client Accounts → Open desired Client → GHL Settings**.
+    - Click **Connect to GHL**.
+    - Install **GHL** from the Marketplace.
+    - Enable **“Voicemetrics Call”** and click **Proceed**.
+    - Select your client listed as a **Sub-account** in GHL.
+
+    <Note>
+      Keep both **Voicemetrics** and **GHL** open in two tabs of the same browser for a quick setup.
+    </Note>
+  </Step>
+  <Step title="Custom Menu Link">
+    - In the **Voicemetrics Agency account**, go to **Client Accounts → GHL Settings**.
+    - Copy the **Custom Menu Link URL**
+
+    <Tip>
+      For example: https://ai.voiceagent.ai/#/embed/&locationid={{location.id}}&allow=&u={{user.name}}&c={{user.email}}
+    </Tip>
+    - In **GHL**, go to **Settings → Custom Menu Links**.
+      - Click **Create New** and:
+      - Choose an icon and name.
+      - Paste the copied URL.
+      - Enable **“Allow Microphone”**.
+      - Select all sub-accounts.
+
+    <Note>
+      **All GHL CRM users can now access Voicemetrics inside GHL.**
+    </Note>
+  </Step>
+  <Step title="Sync Call Logs & Contacts">
+    In **Voicemetrics → GHL Settings**, enable:
+
+    - Auto-Create New Contact in GHL CRM
+    - Auto-Sync Call History to GHL CRM
+    - Log Call Summary as Notes
+    - Auto-Sync GHL Contacts
+
+    You can also:
+
+    <Check>
+      Set **Sync Frequency** (e.g., every 1 hour) 
+    </Check>
+  </Step>
+  <Step title="Field Mapping">
+    <Warning>
+      Mapping options appear only if at least one contact exists in GHL CRM.
+    </Warning>
+    - Click **Add Field** to map additional contact fields.
+    - Ensure accurate field mapping for precise data sync between Voicemetrics and GHL.
+  </Step>
+</Steps>
+
+## **FAQs**
+
+<AccordionGroup>
+  <Accordion title="Do I need to log in with the main GHL account or sub-account?">
+    Log in with your **sub-account**. You’ll see the Voicemetrics menu inside.
+  </Accordion>
+  <Accordion title="Can I use the custom menu link for multiple client accounts?">
+    Yes. A one-time setup of the custom menu link works for all clients in GHL.
+  </Accordion>
+  <Accordion title="How often does the contact sync run?">
+    You can set your preferred sync frequency (e.g., every 1 hour).
+  </Accordion>
+  <Accordion title="What if there are no contacts in GHL CRM?">
+    Field mapping appears only after at least one contact exists in GHL.
+  </Accordion>
+  <Accordion title="How do I ensure call logs sync correctly?">
+    Turn on **Auto-Sync Call History** and **Log Call Summary as Notes**.
+  </Accordion>
+</AccordionGroup>
