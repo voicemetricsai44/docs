@@ -10,7 +10,7 @@ description: "Custom Action enables your voice agent to fetch or send data to an
 
 **Use Case Example:**
 
-- Check if the caller is an existing lead in your CRM
+- Check if the caller is an existing contact in your CRM
 - Retrieve subscription status from your billing system
 
 <Note>
@@ -34,7 +34,7 @@ Push collected call data to external apps for follow-up actions.
   - Use tool #Send_Lead_Info to push the caller's name, email, and interest to CRM.
 </Note>
 
-## **Connect with 1000\+ Apps using Automation Tools**
+## **Connect with 1000+ Apps using Automation Tools**
 
 Easily integrate with platforms like:
 
@@ -42,11 +42,11 @@ Easily integrate with platforms like:
 - **Make (Integromat)**
 - **n8n**
 
-You can connect to 1000\+ apps like Google Sheets, HubSpot, Pipedrive, Salesforce, Mailchimp, Notion, Airtable, ClickUp, and more.
+You can connect to 1000+ apps like Google Sheets, HubSpot, Pipedrive, Salesforce, Mailchimp, Notion, Airtable, ClickUp, and more.
 
 **Use Cases with Automation Tools:**
 
-- Add a lead to **Google Sheets** after the call
+- Add a contact to **Google Sheets** after the call
 - Create a task in **ClickUp** for a sales rep
 - Start a **WhatsApp** or **email sequence** via **MailerLite** or **ActiveCampaign**
 - Add or update contacts in **HubSpot CRM**
@@ -59,29 +59,32 @@ You can connect to 1000\+ apps like Google Sheets, HubSpot, Pipedrive, Salesforc
 
 ## **Setup Instructions**
 
-**Go to** the **Client Account Settings** → Navigate to **Actions** → Select **Custom Actions**.
+**Go to** the **Agents and Edit **→ Navigate to **Actions** → Select **Custom Actions**.
 
-1. **Click** on **“Create New Custom Action.”**
-2. **Fill in the required fields:**
-   - **Name**\
-     Provide a unique name for your action (e.g., getUserInfo, lookupEmail). This will be used in the prompt as #ActionName.
-   - **Description**\
-     Add a short description to guide the AI on when and how to use this action.
-   - **Server URL**\
-     Enter the target API endpoint that this action will call.
-   - **Schema**\
-     Define the input/output parameters of the API:
-     - **Property Name** – Define the field name (e.g., email, userId)
-     - **Description** – Explain the purpose of the field
-     - **Type** – Select the data type: String, Number, Boolean, Object, or Array
-3. **Save** the action.
+![Custom1 Pn](/images/custom1.png)
 
-![Screen_058.jpg](/images/Screen_058.jpg)
+- **Click** on **“Click here" **to add a new Custom Action.
 
-4. In the **Agent Settings**, go to **Actions → On Call → Custom Actions** and select the actions your agent should use during the call.
-5. **Link it in your agent prompt** using the format **#ActionName**.
+![Custom2 Pn](/images/custom2.png)
 
-![Screen_059.jpg](/images/Screen_059.jpg)
+- **Fill in the required fields:**
+  - **Name**\
+    Provide a unique name for your action (e.g., getUserInfo, lookupEmail). This will be used in the prompt as #ActionName.
+  - **Description**\
+    Add a short description to guide the AI on when and how to use this action.
+  - **Server URL**\
+    Enter the target API endpoint that this action will call.
+  - **Schema**\
+    Define the input/output parameters of the API:
+    - **Property Name** – Define the field name (e.g., email, userId)
+    - **Description** – Explain the purpose of the field
+    - **Type** – Select the data type: String, Number, Boolean, Object, or Array
+- **Save** the action.
+
+![Custom3 Pn](/images/custom3.png)
+
+- In the **Agent Settings**, go to **Actions → Custom Actions** and select the actions your agent should use during the call.
+- **Link it in your agent prompt** using the format **#ActionName**.
 
 ## **Best Practices**
 

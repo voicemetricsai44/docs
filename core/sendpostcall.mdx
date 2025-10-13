@@ -11,11 +11,11 @@ When a call ends, the system will send a **POST request** to the provided server
 
 **Create the Action**
 
-1. Go to **Actions** → Click **Post Call** → Select **Send Post Call Event**
+1. Go to **Actions** → Select **Post Call Event**
 2. Add your **Webhook URL** (the server endpoint that will receive the data)
 3. Click **Save.**
 
-![Screen_067.jpg](/images/Screen_067.jpg)
+![Postcall1 Pn](/images/postcall1.png)
 
 ## **Webhook Payload Includes:**
 
@@ -30,9 +30,9 @@ The following fields are automatically included in the POST request:
 - **Agent Phone Number**
 - **Lead Phone Number**
 - **Goal Status** (Achieved / Not Achieved)
-- **Call Rating** (e.g. 1–5 stars or tags)
+- **Call Rating** (e.g., 1–5 stars or tags)
 - **Call Sentiment** (Positive / Neutral / Negative)
-- **Ended Reason** (e.g. user hang-up, agent transfer)
+- **Ended Reason** (e.g,. user hang-up, agent transfer)
 - **Call Summary** (Auto-generated or defined by prompt)
 - **Extracted Info** (via #Extract_Info action)
 - **Full Transcript** (Complete conversation log)
@@ -67,3 +67,5 @@ You can connect the **Send Post Call Event** action to any platform that support
 - Use this action to sync call data with CRMs, Google Sheets, marketing tools, or custom dashboards
 - Combine with #Extract_Info for structured lead data
 - Ensure endpoint response is fast and returns a 200 OK status to avoid retries
+
+![Postcall2 Pn](/images/postcall2.png)
